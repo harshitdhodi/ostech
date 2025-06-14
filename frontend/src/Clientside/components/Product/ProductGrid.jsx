@@ -7,6 +7,7 @@ import { ChevronDown } from 'lucide-react';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from './Collapsible';
 import { IoIosContact } from "react-icons/io";
 import axios from 'axios';
+
 const Skeleton = () => {
   return (
     <div className="animate-pulse">
@@ -34,9 +35,10 @@ export default function ProductGrid() {
 
       const groupedCategories = products.reduce((acc, product) => {
         const category = product.categoryName || 'Uncategorized';
+        const categoryId = product.categories[0]?._id || product.categories[0];
         if (!acc[category]) {
           acc[category] = {
-            id: product.categories[0],
+            id: categoryId,
             products: []
           };
         }
@@ -62,15 +64,15 @@ export default function ProductGrid() {
       const url = selectedCategory === 'All' 
         ? '/api/product/getAllProductsByPriority'
         : `/api/product/getProductsByCategories?categoryIds=${selectedCategory}`;
-        
-      const response = await fetch(url);
-      const responseData = await response.json();
-console.log(responseData);
+      
+      const response = await axios.get(url);
+      const responseData = response.data;
+
+      console.log('API Response:', responseData);
+
       const flattenedProducts = Array.isArray(responseData) 
         ? responseData 
-        : responseData.data 
-          ? responseData.data 
-          : [];
+        : responseData.data || [];
 
       setProducts(flattenedProducts);
       setCurrentPage(1);
@@ -94,7 +96,7 @@ console.log(responseData);
       const categoryMatch =
         selectedCategory === 'All' ||
         product.categoryId === selectedCategory ||
-        (Array.isArray(product.categories));
+        (Array.isArray(product.categories) && product.categories.includes(selectedCategory));
 
       const searchMatch =
         product.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -124,6 +126,7 @@ console.log(responseData);
 
   const handleCategorySelect = useCallback((id) => {
     setSelectedCategory(id);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top on category change
   }, []);
 
   const handleProductSelect = useCallback((id) => {
@@ -132,29 +135,8 @@ console.log(responseData);
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Mobile Categories */}
-      <div className="flex flex-col gap-2 overflow-x-auto md:hidden bg-[#1290ca]/20 p-4 rounded-lg">
-        <Button
-          onClick={() => handleCategorySelect('All')}
-          variant={selectedCategory === 'All' ? 'default' : 'outline'}
-          className="flex-shrink-0 bg-white"
-        >
-          All
-        </Button>
-        {categories.map(category => (
-          <Button
-            key={category._id || category.name}
-            onClick={() => handleCategorySelect(category._id)}
-            variant={selectedCategory === category._id ? 'default' : 'outline'}
-            className="flex-shrink-0 bg-white text-black"
-          >
-            {category.category || category.name}
-          </Button>
-        ))}
-      </div>
-
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Sidebar */}
+        {/* Sidebar (Desktop) */}
         <aside className="hidden scrollbar-hide overflow-auto md:block xl:w-[20%] w-full md:w-1/4 bg-[#0d233f] p-5 rounded-none sticky top-[10%] h-screen">
           <h2 className="text-2xl font-bold text-[#ffffff] text-center mb-4">Product Categories</h2>
           <div className="space-y-3 mt-10">
@@ -167,19 +149,18 @@ console.log(responseData);
                 ))
               ) : categories.length > 0 ? (
                 categories.map((category) => (
-                  <Collapsible key={category._id || category.name}>
+                  <Collapsible key={category.id}>
                     <CollapsibleTrigger className="flex my-3 items-center justify-between w-full font-medium text-left text-gray-700 bg-white text-[16px] hover:bg-gray-100 rounded-md cursor-pointer shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 shadow-[#0b0f14] hover:shadow-[#3a4b5f]">
                       <div
                         className="flex-grow cursor-pointer"
                         onClick={() => handleCategorySelect(category.id)}
                       >
-                        {category.category || category.name}
+                        {category.name}
                       </div>
                       <div className="">
                         <ChevronDown className="h-6 w-4 mr-2" />
                       </div>
                     </CollapsibleTrigger>
-
                     <CollapsibleContent className="mt-2 space-y-2">
                       {(category.products || []).map((product) => (
                         <Link
@@ -190,8 +171,8 @@ console.log(responseData);
                           <Button
                             variant="ghost"
                             className={`w-full shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 
-                  shadow-[#0b0f14] hover:shadow-[#3a4b5f] justify-start text-[13px] hover:bg-white bg-gray-200 m-1 pl-4 
-                  ${selectedProduct === product._id ? 'bg-white' : ''}`}
+                              shadow-[#0b0f14] hover:shadow-[#3a4b5f] justify-start text-[13px] hover:bg-white bg-gray-200 m-1 pl-4 
+                              ${selectedProduct === product._id ? 'bg-white' : ''}`}
                           >
                             {product.title}
                           </Button>
@@ -209,6 +190,7 @@ console.log(responseData);
 
         {/* Main Content */}
         <main className="flex-1 overflow-auto">
+          {/* Product Grid */}
           <div className="grid grid-cols-1 xl:m-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {loading ? (
               Array(6).fill(0).map((_, i) => (
@@ -228,7 +210,7 @@ console.log(responseData);
                 <Card key={product._id} className="mx-4 flex flex-col transition-shadow duration-300 hover:shadow-lg hover:shadow-[#1290ca] shadow-[#1290ca]/20">
                   <CardHeader className="p-0">
                     <div
-                      onClick={() => handleReadMore(categories.find(cat => cat._id === product.categories[0])?.category, product.slug)}
+                      onClick={() => handleReadMore(categories.find(cat => cat.id === product.categories[0])?.name, product.slug)}
                       className="cursor-pointer aspect-[4/3] relative overflow-hidden"
                     >
                       <img
@@ -239,14 +221,14 @@ console.log(responseData);
                     </div>
                   </CardHeader>
                   <CardContent
-                    onClick={() => handleReadMore(categories.find(cat => cat._id === product.categories[0])?.category, product.slug)}
+                    onClick={() => handleReadMore(categories.find(cat => cat.id === product.categories[0])?.name, product.slug)}
                     className="flex-1 p-4 py-6 cursor-pointer"
                   >
                     <CardTitle className="text-lg sm:text-xl mb-2 line-clamp-2 hover:text-[#1290ca]">
                       {product.title}
                     </CardTitle>
                     <p className="text-sm text-gray-500 mb-3">
-                      {categories.find(cat => cat._id === product.categories[0])?.category}
+                      {categories.find(cat => cat.id === product.categories[0])?.name}
                     </p>
                     <div className="text-gray-600 text-sm line-clamp-3" dangerouslySetInnerHTML={{ __html: product.homeDetail }} />
                   </CardContent>
@@ -279,6 +261,28 @@ console.log(responseData);
               ))}
             </div>
           )}
+
+          {/* Mobile Categories (At Bottom) */}
+          <div className="flex flex-col gap-2 overflow-x-auto md:hidden bg-[#1290ca]/20 p-4 rounded-lg mt-8">
+            <h2 className="text-lg font-bold text-center mb-2">Categories</h2>
+            <Button
+              onClick={() => handleCategorySelect('All')}
+              variant={selectedCategory === 'All' ? 'default' : 'outline'}
+              className="flex-shrink-0 bg-white"
+            >
+              All
+            </Button>
+            {categories.map(category => (
+              <Button
+                key={category.id}
+                onClick={() => handleCategorySelect(category.id)}
+                variant={selectedCategory === category.id ? 'default' : 'outline'}
+                className="flex-shrink-0 bg-white text-black"
+              >
+                {category.name}
+              </Button>
+            ))}
+          </div>
         </main>
       </div>
     </div>

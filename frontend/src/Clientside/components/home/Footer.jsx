@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Youtube, Mail, Clock, Phone, MapPin, YoutubeIcon } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Youtube, Mail, Clock, Phone, MapPin } from 'lucide-react';
 import logo2 from "../../../assets/halfLogo.png";
 import { FaYoutube } from "react-icons/fa";
 
@@ -33,6 +33,11 @@ const Footer = () => {
     fetchFooterData();
   }, []);
 
+  // Utility to detect if the device is mobile
+  const isMobileDevice = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  };
+
   // Click handlers
   const handleEmailClick = (emailAddress) => {
     if (emailAddress) {
@@ -41,8 +46,14 @@ const Footer = () => {
   };
 
   const handlePhoneClick = (phoneNumber) => {
-    if (phoneNumber) {
+    if (!phoneNumber) return;
+
+    if (isMobileDevice()) {
+      // On mobile, trigger the phone dialer
       window.location.href = `tel:${phoneNumber}`;
+    } else {
+      // On desktop, show an alert or do nothing
+      alert('Phone calls are not supported on this device. Please use a mobile device to call.');
     }
   };
 
@@ -72,23 +83,30 @@ const Footer = () => {
   } = footerData;
 
   return (
-    <footer  className="w-full bg-[#052852] text-white py-12 relative">
-
+    <footer className="w-full bg-[#052852] text-white py-12 relative">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Company Info Section */}
         <div className="space-y-6">
           <div>
             <Link to="/">
-              <img src={logo2}   onClick={scrollToTop}
-       alt="Logo" className='h-[10vh] mb-5' />
+              <img src={logo2} onClick={scrollToTop}
+                alt="Logo" className='h-[10vh] mb-5' />
             </Link>
             <p className="text-gray-300 text-justify">{newsletter}</p>
           </div>
-          <Link to="/contact-us">
-            <button className="border border-white mt-6 px-6 py-2 rounded hover:bg-white hover:text-slate-900 transition-colors">
-              Inquiry
-            </button>
-          </Link>
+          <button
+            className="border border-white mt-6 px-6 py-2 rounded hover:bg-white hover:text-slate-900 transition-colors"
+            onClick={() => {
+              if (window.location.pathname === '/contact-us') {
+                scrollToTop();
+              } else {
+                navigate('/contact-us');
+                setTimeout(() => scrollToTop(), 100);
+              }
+            }}
+          >
+            Inquiry
+          </button>
         </div>
 
         {/* Products Section */}
@@ -171,16 +189,9 @@ const Footer = () => {
             </Link>
             <Link to="/terms-and-conditions">
               <p className='text-gray-400 text-sm'>Terms and Conditions</p>
-              </Link>
-            {/* <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
-            </a>
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
-            </a> */}
+            </Link>
             <a href={googleLink} target="_blank" rel="noopener noreferrer">
-            <FaYoutube className="w-5 h-5 text-red-800  cursor-pointer" />
-
+              <FaYoutube className="w-5 h-5 text-red-800 cursor-pointer" />
             </a>
           </div>
         </div>

@@ -70,14 +70,14 @@ exports.createInquiry = async (req, res) => {
 </head>
 <body>
     <div class="container">
-        <h2>Shanti Patra</h2>
+        <h2>OSTECH</h2>
         <p class="centered-text">New Inquiry!!</p>
         <p><span class="field">Product Name:</span> ${newInquiry.productName}</p>
         <p><span class="field">Name:</span> ${newInquiry.name}</p>
         <p><span class="field">Email:</span> ${newInquiry.email}</p>
         <p><span class="field">Phone:</span> ${newInquiry.phone}</p>
         <p><span class="field">Message:</span>${newInquiry.message}</p>
-       
+        
         <div class="footer">
             <p>This is an automated email. Please do not reply.</p>
         </div>
