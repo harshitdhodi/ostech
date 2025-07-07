@@ -52,42 +52,47 @@ const updateProduct = async (req, res) => {
     try {
         const { slugs } = req.query;
         const files = req.files;
-        
-        // Log incoming data for debugging
+
         console.log('Incoming update data:', {
             body: req.body,
             files: files
         });
 
-        // Get the existing product
+        // Fetch existing product
         const existingProduct = await Product.findOne({ slug: slugs });
         if (!existingProduct) {
             return res.status(404).json({ message: 'Product not found' });
         }
 
-        // Prepare update data
+        // Prepare update payload
         const updateData = {
             ...req.body,
-            // Use the arrays directly from req.body since they're already in the correct format
             alt: req.body.alt || [],
-            imgtitle: req.body.imgtitle || []
+            imgtitle: req.body.imgtitle || [],
         };
 
-        // Log the final update data
+        // 🔽 Handle uploaded catalogue file
+        if (files && files.catalogue && files.catalogue.length > 0) {
+            updateData.catalogue = files.catalogue[0].filename; // Save filename only
+        }
+
+        // 🔽 Optionally handle uploaded photo or video if needed
+        // Example:
+        // if (files.photo) updateData.photo = files.photo.map(file => file.filename);
+
         console.log('Final update data:', updateData);
 
-        // Update the product
         const updatedProduct = await Product.findOneAndUpdate(
             { slug: slugs },
             updateData,
             { new: true }
         );
 
-        // Log the updated product
         console.log('Updated product:', {
             photo: updatedProduct.photo,
             alt: updatedProduct.alt,
-            imgtitle: updatedProduct.imgtitle
+            imgtitle: updatedProduct.imgtitle,
+            catalogue: updatedProduct.catalogue
         });
 
         res.status(200).json(updatedProduct);

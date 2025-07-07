@@ -8,8 +8,9 @@ import WhyChooseUs from './WhyChooseUs';
 import { productCategories } from './ProductList';
 import { IoIosContact } from "react-icons/io";
 import axios from 'axios';
-import { Collapsible, CollapsibleTrigger, CollapsibleContent } from './Collapsible'; // Assuming collapsible components
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from './Collapsible';
 import { Button } from './Button';
+
 const ProductDetail = () => {
   const { slug } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,15 +18,13 @@ const ProductDetail = () => {
   const [currentProduct, setCurrentProduct] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [categories, setCategories] = useState([]);
-  const [selectedProduct, setSelectedProduct] = useState(null); // Added state to track selected product
-  const [openCategory, setOpenCategory] = useState(null); // State to track the open category
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [openCategory, setOpenCategory] = useState(null);
   const [footerData, setFooterData] = useState(null);
 
   useEffect(() => {
-    // Fetch the footer data when the component mounts
     axios.get('/api/footer/getAllFooter')
       .then((response) => {
-        // Assuming the response contains an object with the contact details
         setFooterData(response.data);
       })
       .catch((error) => {
@@ -33,7 +32,6 @@ const ProductDetail = () => {
       });
   }, []);
 
-  // Fetch product data
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -49,23 +47,12 @@ const ProductDetail = () => {
 
     fetchProduct();
   }, [slug]);
-  useEffect(() => {
-    axios.get('/api/product/getAll')
-      .then(response => {
-        setCategories(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching product categories:', error);
-      });
-  }, []);
-
 
   useEffect(() => {
     axios.get('/api/product/getAllProducts')
       .then(response => {
         const products = response.data.data;
 
-        // Group products by categoryName
         const groupedCategories = products.reduce((acc, product) => {
           const category = product.categoryName || 'Uncategorized';
           if (!acc[category]) acc[category] = [];
@@ -73,7 +60,6 @@ const ProductDetail = () => {
           return acc;
         }, {});
 
-        // Convert grouped categories into an array format
         setCategories(Object.entries(groupedCategories).map(([name, products]) => ({
           name,
           products,
@@ -83,7 +69,7 @@ const ProductDetail = () => {
         console.error('Error fetching product categories:', error);
       });
   }, []);
-  // Image carousel controls
+
   const nextImage = () => {
     if (!currentProduct?.photo) return;
     setCurrentImageIndex((prevIndex) =>
@@ -98,6 +84,14 @@ const ProductDetail = () => {
     );
   };
 
+  const handleCatalogueClick = () => {
+    if (currentProduct?.catalogue) {
+      window.open(`/api/image/catalogue/view/${currentProduct.catalogue}`, '_blank');
+    } else {
+      alert('No Available');
+    }
+  };
+
   if (isLoading) {
     return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
   }
@@ -107,7 +101,7 @@ const ProductDetail = () => {
   }
 
   const toggleCategory = (categoryId) => {
-    setOpenCategory((prev) => (prev === categoryId ? null : categoryId)); // Toggle the category open/close
+    setOpenCategory((prev) => (prev === categoryId ? null : categoryId));
   };
 
   return (
@@ -118,7 +112,7 @@ const ProductDetail = () => {
           onClose={() => setShowInquiryForm(false)}
         />
       )}
-      <aside className="w-full md:w-[30%] lg:w-[25%] rounded-lg  xl:w-[20%] hidden bg-[#0d233f] md:pr-8 lg:px-7 mb-8 md:block">
+      <aside className="w-full md:w-[30%] lg:w-[25%] rounded-lg xl:w-[20%] hidden bg-[#0d233f] md:pr-8 lg:px-7 mb-8 md:block">
         <div className="md:sticky min-h-screen md:top-24 overflow-auto">
           <h2 className="text-2xl text-[#ffffff] font-bold text-center md:text-2xl md:ml-2 py-7">
             Product Categories
@@ -128,7 +122,7 @@ const ProductDetail = () => {
             {categories.length > 0 ? (
               categories.map((category) => (
                 <Collapsible key={category.name}>
-                  <CollapsibleTrigger className="flex my-3 items-center justify-between w-full font-medium text-left text-gray-700 bg-white text-[16px] hover:bg-gray-100 rounded-md cursor-pointer  shadow hover:shadow-lg hover:translate-y-[-3px] transform  transition-all duration-300 
+                  <CollapsibleTrigger className="flex my-3 items-center justify-between w-full font-medium text-left text-gray-700 bg-white text-[16px] hover:bg-gray-100 rounded-md cursor-pointer shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 
              shadow-[#0b0f14] hover:shadow-[#3a4b5f]">
                     {category.name}
                     <div>
@@ -141,7 +135,7 @@ const ProductDetail = () => {
                       <Link key={product._id} to={`/${product.slug}`} onClick={() => setSelectedProduct(product._id)}>
                         <Button
                           variant="ghost"
-                          className={`w-full  shadow hover:shadow-lg hover:translate-y-[-3px] transform  transition-all duration-300 
+                          className={`w-full shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 
              shadow-[#0b0f14] hover:shadow-[#3a4b5f] justify-start text-[13px] hover:bg-white bg-gray-200 m-1 pl-4 ${selectedProduct === product._id ? 'bg-white' : ''}`}
                           asChild
                         >
@@ -157,41 +151,32 @@ const ProductDetail = () => {
             )}
           </div>
 
-          {/* Contact Section */}
-          <div className="w-full md:w-full lg:w-full ml-5 mb-7  lg:ml-0 rounded +- mt-4 h-auto md:h-[25vh] border  shadow hover:shadow-lg hover:translate-y-[-3px] transform  transition-all duration-300 hover:shadow-[#3a4b5f] bg-[#ffffff]">
-            <div className="flex justify-center items-center  sm:mt-2">
-              {/* Icon size adjusted for responsiveness */}
+          <div className="w-full md:w-full lg:w-full ml-5 mb-7 lg:ml-0 rounded mt-4 h-auto md:h-[25vh] border shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 hover:shadow-[#3a4b5f] bg-[#ffffff]">
+            <div className="flex justify-center items-center sm:mt-2">
               <IoIosContact className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] text-[#0d233f]" />
             </div>
-            <div className="flex flex-col mt-1  justify-center items-center">
-              {/* Render contact details if data is available */}
+            <div className="flex flex-col mt-1 justify-center items-center">
               {footerData ? (
                 <>
-                  <p className="text-sm sm:text-base  md:text-lg lg:text-lg font-bold text-[#051852]">
-                    {footerData.phone || '+91 99783 88388'} {/* Default if no data */}
+                  <p className="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-[#051852]">
+                    {footerData.phone || '+91 99783 88388'}
                   </p>
-                  <p className="text-sm sm:text-base  md:text-lg lg:text-lg font-bold text-[#051852]">
-                    {footerData.email || 'rajneesh@ostech.in'} {/* Default if no data */}
+                  <p className="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-[#051852]">
+                    {footerData.email || 'rajneesh@ostech.in'}
                   </p>
                 </>
               ) : (
-                <p>Loading contact details...</p> // Placeholder while fetching data
+                <p>Loading contact details...</p>
               )}
             </div>
           </div>
         </div>
       </aside>
 
-
-
-
-
-
       <main className="flex-1">
         <Card className="border-none shadow-none rounded-xl">
           <CardContent className="p-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Image Gallery */}
               <div className="flex flex-col space-y-4">
                 <div className="relative md:h-[25rem] h-[20rem] w-full rounded-xlSkeletonLoader overflow-hidden bg-gray-100">
                   <img
@@ -199,7 +184,6 @@ const ProductDetail = () => {
                     alt={currentProduct.title}
                     className="w-full h-full lg:object-cover object-contain"
                   />
-
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   <Button
                     variant="ghost"
@@ -219,13 +203,12 @@ const ProductDetail = () => {
                   </Button>
                 </div>
 
-                {/* Thumbnails */}
                 <div className="flex space-x-4 overflow-x-auto">
                   {currentProduct.photo.map((image, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
-                      className={`relative sm:w-24 w-20 h-16 m-2  rounded-lg overflow-hidden ${index === currentImageIndex
+                      className={`relative sm:w-24 w-20 h-16 m-2 rounded-lg overflow-hidden ${index === currentImageIndex
                         ? 'ring-2 ring-blue-500 ring-offset-2'
                         : 'hover:opacity-75'
                         }`}
@@ -237,11 +220,9 @@ const ProductDetail = () => {
                       />
                     </button>
                   ))}
-
                 </div>
               </div>
 
-              {/* Product Details */}
               <div className="flex flex-col space-y-6">
                 <div>
                   <h1 className="text-3xl text-[#052852] font-bold tracking-tight">
@@ -249,11 +230,8 @@ const ProductDetail = () => {
                   </h1>
                   <div
                     className="text-gray-600 text-justify"
-                    dangerouslySetInnerHTML={{ __html: currentProduct.homeDetail }} // Render HTML content
+                    dangerouslySetInnerHTML={{ __html: currentProduct.homeDetail }}
                   />
-                  {/* <p className="mt-2 text-gray-500">
-                    {currentProduct.homeDetail || 'Efficient Soap Cutting, Billet Shaping, and Stamping Solution'}
-                  </p> */}
                   <h2 className="text-xl font-semibold mt-4 text-[#052852]">Description</h2>
                   <div
                     className="text-gray-600 mt-2 text-justify leading-relaxed"
@@ -265,9 +243,13 @@ const ProductDetail = () => {
                   >
                     Inquiry Now
                   </button>
+                  <button
+                    onClick={handleCatalogueClick}
+                    className="border bg-[#1290ca] p-2 px-7 rounded mt-5 text-white text-lg ml-2"
+                  >
+                    Catalogue
+                  </button>
                 </div>
-
-                {/* Key Features */}
               </div>
             </div>
           </CardContent>
@@ -290,7 +272,7 @@ const ProductDetail = () => {
       </main>
 
       <aside className="w-full md:w-[20%] block md:hidden bg-[#1290ca]/20 md:pr-8 lg:px-7 mb-8 p-5">
-        <div className="md:sticky  md:top-24">
+        <div className="md:sticky md:top-24">
           <h2 className="text-2xl text-[#052852] font-bold mb-4 p-4">Product Categories</h2>
 
           {categories.length > 0 ? (
@@ -308,7 +290,6 @@ const ProductDetail = () => {
                       to={`/${product.slug}`}
                       onClick={() => {
                         setSelectedProduct(product._id);
-                        // Scroll to the top when a category is clicked
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                     >
@@ -328,30 +309,27 @@ const ProductDetail = () => {
             <p>No categories available</p>
           )}
 
-          {/* Contact Section */}
           <div className="w-full md:w-[28vh] rounded mt-10 h-auto md:h-[30vh] border bg-[#052852]">
-            <div className="flex justify-center  items-center sm:mt-7 my-2">
+            <div className="flex justify-center items-center sm:mt-7 my-2">
               <IoIosContact className="text-[4rem] sm:text-[6rem] text-white" />
             </div>
             <div className="flex flex-col my-3 justify-center items-center">
-              {/* Render contact details if data is available */}
               {footerData ? (
                 <>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white">
-                    {footerData.phone || '+91 99783 88388'} {/* Default if no data */}
+                    {footerData.phone || '+91 99783 88388'}
                   </p>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white">
-                    {footerData.email || 'rajneesh@ostech.in'} {/* Default if no data */}
+                    {footerData.email || 'rajneesh@ostech.in'}
                   </p>
                 </>
               ) : (
-                <p>Loading contact details...</p> // Placeholder while fetching data
+                <p>Loading contact details...</p>
               )}
             </div>
           </div>
         </div>
       </aside>
-
     </div>
   );
 };
