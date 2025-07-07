@@ -7,6 +7,7 @@ import { ChevronDown } from 'lucide-react';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from './Collapsible';
 import { IoIosContact } from "react-icons/io";
 import axios from 'axios';
+
 const Skeleton = () => {
   return (
     <div className="animate-pulse">
@@ -44,13 +45,20 @@ export default function ProductGrid() {
         return acc;
       }, {});
 
-      setCategories(
-        Object.entries(groupedCategories).map(([name, data]) => ({
-          name,
-          id: data.id,
-          products: data.products
-        }))
-      );
+      const categoryArray = Object.entries(groupedCategories).map(([name, data]) => ({
+        name,
+        id: data.id,
+        products: data.products
+      }));
+
+      // Sort categories to put "Case packer" first
+      const sortedCategories = categoryArray.sort((a, b) => {
+        if (a.name.toLowerCase() === 'case packer') return -1;
+        if (b.name.toLowerCase() === 'case packer') return 1;
+        return a.name.localeCompare(b.name);
+      });
+
+      setCategories(sortedCategories);
     } catch (error) {
       console.error('Error fetching product categories:', error);
     }
@@ -65,7 +73,6 @@ export default function ProductGrid() {
         
       const response = await fetch(url);
       const responseData = await response.json();
-console.log(responseData);
       const flattenedProducts = Array.isArray(responseData) 
         ? responseData 
         : responseData.data 
