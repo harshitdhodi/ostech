@@ -1,1 +1,0 @@
-import{j as i}from"./index-Vu9aRgsR.js";import o from"./Mission-7iXhRGUr.js";import"./quill.snow-DdLT0Kmw.js";import"./ReactToastify-D4xlGJRd.js";import r from"./FAQ-D36GD8Xn.js";import"./clsx-B-dksMZM.js";import"./index-BCyGfQK3.js";import"./index-Dp82zQnx.js";import"./index-BRVL8BvF.js";function j(){return i.jsxs("div",{children:[i.jsx(o,{}),i.jsx(r,{})]})}export{j as default};
