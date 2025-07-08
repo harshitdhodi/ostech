@@ -182,7 +182,7 @@ export default function Sidebar() {
         ref={sidebarRef}
         className={`bg-primary fixed lg:relative z-10 h-full w-[14rem] md:w-[18rem] overflow-y-auto  ${isMenuOpen ? "translate-x-0 transform transition-transform duration-500" : "-translate-x-full lg:translate-x-0"
           }`}>
-        <div className='font-bold text-white text-center pt-4 text-[20px] px-8'>
+        <div className='font-bold text-white text-center pt-4 text-[20px] w-[75%] px-8'>
           {logo && logo.length > 0 && (
             <div>
               <img src={`/api/logo/download/${logo[logo.length - 1].photo}`} alt="Logo" className="w-1/2 h-1/2" />
