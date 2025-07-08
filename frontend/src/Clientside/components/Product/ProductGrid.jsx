@@ -67,16 +67,16 @@ export default function ProductGrid() {
   const fetchProducts = useCallback(async () => {
     setLoading(true);
     try {
-      const url = selectedCategory === 'All' 
+      const url = selectedCategory === 'All'
         ? '/api/product/getAllProductsByPriority'
         : `/api/product/getProductsByCategories?categoryIds=${selectedCategory}`;
-        
+
       const response = await fetch(url);
       const responseData = await response.json();
-      const flattenedProducts = Array.isArray(responseData) 
-        ? responseData 
-        : responseData.data 
-          ? responseData.data 
+      const flattenedProducts = Array.isArray(responseData)
+        ? responseData
+        : responseData.data
+          ? responseData.data
           : [];
 
       setProducts(flattenedProducts);
@@ -166,6 +166,14 @@ export default function ProductGrid() {
           <h2 className="text-2xl font-bold text-[#ffffff] text-center mb-4">Product Categories</h2>
           <div className="space-y-3 mt-10">
             <div className="flex flex-col justify-center">
+              {/* Add All button here */}
+              <Button
+                onClick={() => handleCategorySelect('All')}
+                variant={selectedCategory === 'All' ? 'default' : 'outline'}
+                className="flex-shrink-0 bg-white mb-2 text-left"
+              >
+                All Categories
+              </Button>
               {loading ? (
                 Array(5).fill(0).map((_, i) => (
                   <div key={i} className="my-3">
@@ -241,7 +249,7 @@ export default function ProductGrid() {
                       <img
                         src={`/api/image/download/${product.photo[0] || 'default-image.jpg'}`}
                         alt={product.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-fill hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   </CardHeader>
@@ -275,11 +283,10 @@ export default function ProductGrid() {
                 <Button
                   key={index + 1}
                   onClick={() => handlePageChange(index + 1)}
-                  className={`px-4 my-3 py-2 rounded-md text-sm transition-colors duration-300 ${
-                    currentPage === index + 1
+                  className={`px-4 my-3 py-2 rounded-md text-sm transition-colors duration-300 ${currentPage === index + 1
                       ? 'bg-[#1d84b4] text-black border border-[#0f3242]'
                       : 'bg-black text-[#0f3242] hover:bg-[#f0f4f8] hover:text-[#1290ca] border border-[#d1d5db]'
-                  }`}
+                    }`}
                 >
                   {index + 1}
                 </Button>

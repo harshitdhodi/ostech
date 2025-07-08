@@ -60,10 +60,19 @@ const ProductDetail = () => {
           return acc;
         }, {});
 
-        setCategories(Object.entries(groupedCategories).map(([name, products]) => ({
+        // Convert to array and sort so "Case packer" is first
+        const categoryArray = Object.entries(groupedCategories).map(([name, products]) => ({
           name,
           products,
-        })));
+        }));
+
+        const sortedCategories = categoryArray.sort((a, b) => {
+          if (a.name.toLowerCase() === 'case packer') return -1;
+          if (b.name.toLowerCase() === 'case packer') return 1;
+          return a.name.localeCompare(b.name);
+        });
+
+        setCategories(sortedCategories);
       })
       .catch(error => {
         console.error('Error fetching product categories:', error);
@@ -178,11 +187,12 @@ const ProductDetail = () => {
           <CardContent className="p-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex flex-col space-y-4">
-                <div className="relative md:h-[25rem] h-[20rem] w-full rounded-xlSkeletonLoader overflow-hidden bg-gray-100">
+
+                <div className="relative w-full aspect-[3/2] rounded-xlSkeletonLoader overflow-hidden bg-gray-100">
                   <img
                     src={`/api/image/download/${currentProduct.photo[currentImageIndex] || 'default-image.jpg'}`}
                     alt={currentProduct.title}
-                    className="w-full h-full lg:object-cover object-contain"
+                    className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   <Button
@@ -202,6 +212,7 @@ const ProductDetail = () => {
                     <ChevronRight className="h-5 w-5 relative right-2" />
                   </Button>
                 </div>
+
 
                 <div className="flex space-x-4 overflow-x-auto">
                   {currentProduct.photo.map((image, index) => (
@@ -243,12 +254,12 @@ const ProductDetail = () => {
                   >
                     Inquiry Now
                   </button>
-                  <button
+                  {/* <button
                     onClick={handleCatalogueClick}
                     className="border bg-[#1290ca] p-2 px-7 rounded mt-5 text-white text-lg ml-2"
                   >
                     Catalogue
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
