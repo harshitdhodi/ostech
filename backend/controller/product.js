@@ -71,14 +71,22 @@ const updateProduct = async (req, res) => {
             imgtitle: req.body.imgtitle || [],
         };
 
-        // 🔽 Handle uploaded catalogue file
+        // Handle uploaded catalogue file
         if (files && files.catalogue && files.catalogue.length > 0) {
             updateData.catalogue = files.catalogue[0].filename; // Save filename only
         }
 
-        // 🔽 Optionally handle uploaded photo or video if needed
-        // Example:
-        // if (files.photo) updateData.photo = files.photo.map(file => file.filename);
+        // Handle uploaded photo(s) by appending to existing photos
+        if (files && files.photo) {
+            // Get existing photos or initialize as empty array
+            const existingPhotos = existingProduct.photo || [];
+            // Get new photo filenames
+            const newPhotos = Array.isArray(files.photo)
+                ? files.photo.map(file => file.filename)
+                : [files.photo.filename];
+            // Append new photos to existing photos
+            updateData.photo = [...existingPhotos, ...newPhotos];
+        }
 
         console.log('Final update data:', updateData);
 
