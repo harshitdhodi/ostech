@@ -44,7 +44,7 @@ cron.schedule('59 23 31 * *', () => {
 }, {
     scheduled: true,
     timezone: "Asia/Kolkata" 
-});
+}); 
 
 app.use('/uploads', serveStatic(path.join(__dirname, 'uploads')));
 
