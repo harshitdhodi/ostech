@@ -35,10 +35,9 @@ export default function ProductGrid() {
 
       const groupedCategories = products.reduce((acc, product) => {
         const category = product.categoryName || 'Uncategorized';
-        const categoryId = product.categories[0]?._id || product.categories[0];
         if (!acc[category]) {
           acc[category] = {
-            id: categoryId,
+            id: product.categories[0],
             products: []
           };
         }
@@ -46,13 +45,20 @@ export default function ProductGrid() {
         return acc;
       }, {});
 
-      setCategories(
-        Object.entries(groupedCategories).map(([name, data]) => ({
-          name,
-          id: data.id,
-          products: data.products
-        }))
-      );
+      const categoryArray = Object.entries(groupedCategories).map(([name, data]) => ({
+        name,
+        id: data.id,
+        products: data.products
+      }));
+
+      // Sort categories to put "Case packer" first
+      const sortedCategories = categoryArray.sort((a, b) => {
+        if (a.name.toLowerCase() === 'case packer') return -1;
+        if (b.name.toLowerCase() === 'case packer') return 1;
+        return a.name.localeCompare(b.name);
+      });
+
+      setCategories(sortedCategories);
     } catch (error) {
       console.error('Error fetching product categories:', error);
     }
@@ -61,18 +67,17 @@ export default function ProductGrid() {
   const fetchProducts = useCallback(async () => {
     setLoading(true);
     try {
-      const url = selectedCategory === 'All' 
+      const url = selectedCategory === 'All'
         ? '/api/product/getAllProductsByPriority'
         : `/api/product/getProductsByCategories?categoryIds=${selectedCategory}`;
-      
-      const response = await axios.get(url);
-      const responseData = response.data;
 
-      console.log('API Response:', responseData);
-
-      const flattenedProducts = Array.isArray(responseData) 
-        ? responseData 
-        : responseData.data || [];
+      const response = await fetch(url);
+      const responseData = await response.json();
+      const flattenedProducts = Array.isArray(responseData)
+        ? responseData
+        : responseData.data
+          ? responseData.data
+          : [];
 
       setProducts(flattenedProducts);
       setCurrentPage(1);
@@ -96,7 +101,7 @@ export default function ProductGrid() {
       const categoryMatch =
         selectedCategory === 'All' ||
         product.categoryId === selectedCategory ||
-        (Array.isArray(product.categories) && product.categories.includes(selectedCategory));
+        (Array.isArray(product.categories));
 
       const searchMatch =
         product.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -126,7 +131,6 @@ export default function ProductGrid() {
 
   const handleCategorySelect = useCallback((id) => {
     setSelectedCategory(id);
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top on category change
   }, []);
 
   const handleProductSelect = useCallback((id) => {
@@ -135,12 +139,41 @@ export default function ProductGrid() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Mobile Categories */}
+      <div className="flex flex-col gap-2 overflow-x-auto md:hidden bg-[#1290ca]/20 p-4 rounded-lg">
+        <Button
+          onClick={() => handleCategorySelect('All')}
+          variant={selectedCategory === 'All' ? 'default' : 'outline'}
+          className="flex-shrink-0 bg-white"
+        >
+          All
+        </Button>
+        {categories.map(category => (
+          <Button
+            key={category._id || category.name}
+            onClick={() => handleCategorySelect(category._id)}
+            variant={selectedCategory === category._id ? 'default' : 'outline'}
+            className="flex-shrink-0 bg-white text-black"
+          >
+            {category.category || category.name}
+          </Button>
+        ))}
+      </div>
+
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Sidebar (Desktop) */}
+        {/* Sidebar */}
         <aside className="hidden scrollbar-hide overflow-auto md:block xl:w-[20%] w-full md:w-1/4 bg-[#0d233f] p-5 rounded-none sticky top-[10%] h-screen">
           <h2 className="text-2xl font-bold text-[#ffffff] text-center mb-4">Product Categories</h2>
           <div className="space-y-3 mt-10">
             <div className="flex flex-col justify-center">
+              {/* Add All button here */}
+              <Button
+                onClick={() => handleCategorySelect('All')}
+                variant={selectedCategory === 'All' ? 'default' : 'outline'}
+                className="flex-shrink-0 bg-white mb-2 text-left"
+              >
+                All Categories
+              </Button>
               {loading ? (
                 Array(5).fill(0).map((_, i) => (
                   <div key={i} className="my-3">
@@ -149,18 +182,19 @@ export default function ProductGrid() {
                 ))
               ) : categories.length > 0 ? (
                 categories.map((category) => (
-                  <Collapsible key={category.id}>
+                  <Collapsible key={category._id || category.name}>
                     <CollapsibleTrigger className="flex my-3 items-center justify-between w-full font-medium text-left text-gray-700 bg-white text-[16px] hover:bg-gray-100 rounded-md cursor-pointer shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 shadow-[#0b0f14] hover:shadow-[#3a4b5f]">
                       <div
                         className="flex-grow cursor-pointer"
                         onClick={() => handleCategorySelect(category.id)}
                       >
-                        {category.name}
+                        {category.category || category.name}
                       </div>
                       <div className="">
                         <ChevronDown className="h-6 w-4 mr-2" />
                       </div>
                     </CollapsibleTrigger>
+
                     <CollapsibleContent className="mt-2 space-y-2">
                       {(category.products || []).map((product) => (
                         <Link
@@ -171,8 +205,8 @@ export default function ProductGrid() {
                           <Button
                             variant="ghost"
                             className={`w-full shadow hover:shadow-lg hover:translate-y-[-3px] transform transition-all duration-300 
-                              shadow-[#0b0f14] hover:shadow-[#3a4b5f] justify-start text-[13px] hover:bg-white bg-gray-200 m-1 pl-4 
-                              ${selectedProduct === product._id ? 'bg-white' : ''}`}
+                  shadow-[#0b0f14] hover:shadow-[#3a4b5f] justify-start text-[13px] hover:bg-white bg-gray-200 m-1 pl-4 
+                  ${selectedProduct === product._id ? 'bg-white' : ''}`}
                           >
                             {product.title}
                           </Button>
@@ -190,7 +224,6 @@ export default function ProductGrid() {
 
         {/* Main Content */}
         <main className="flex-1 overflow-auto">
-          {/* Product Grid */}
           <div className="grid grid-cols-1 xl:m-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {loading ? (
               Array(6).fill(0).map((_, i) => (
@@ -210,25 +243,25 @@ export default function ProductGrid() {
                 <Card key={product._id} className="mx-4 flex flex-col transition-shadow duration-300 hover:shadow-lg hover:shadow-[#1290ca] shadow-[#1290ca]/20">
                   <CardHeader className="p-0">
                     <div
-                      onClick={() => handleReadMore(categories.find(cat => cat.id === product.categories[0])?.name, product.slug)}
+                      onClick={() => handleReadMore(categories.find(cat => cat._id === product.categories[0])?.category, product.slug)}
                       className="cursor-pointer aspect-[4/3] relative overflow-hidden"
                     >
                       <img
                         src={`/api/image/download/${product.photo[0] || 'default-image.jpg'}`}
                         alt={product.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-fill hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   </CardHeader>
                   <CardContent
-                    onClick={() => handleReadMore(categories.find(cat => cat.id === product.categories[0])?.name, product.slug)}
+                    onClick={() => handleReadMore(categories.find(cat => cat._id === product.categories[0])?.category, product.slug)}
                     className="flex-1 p-4 py-6 cursor-pointer"
                   >
                     <CardTitle className="text-lg sm:text-xl mb-2 line-clamp-2 hover:text-[#1290ca]">
                       {product.title}
                     </CardTitle>
                     <p className="text-sm text-gray-500 mb-3">
-                      {categories.find(cat => cat.id === product.categories[0])?.name}
+                      {categories.find(cat => cat._id === product.categories[0])?.category}
                     </p>
                     <div className="text-gray-600 text-sm line-clamp-3" dangerouslySetInnerHTML={{ __html: product.homeDetail }} />
                   </CardContent>
@@ -250,39 +283,16 @@ export default function ProductGrid() {
                 <Button
                   key={index + 1}
                   onClick={() => handlePageChange(index + 1)}
-                  className={`px-4 my-3 py-2 rounded-md text-sm transition-colors duration-300 ${
-                    currentPage === index + 1
+                  className={`px-4 my-3 py-2 rounded-md text-sm transition-colors duration-300 ${currentPage === index + 1
                       ? 'bg-[#1d84b4] text-black border border-[#0f3242]'
                       : 'bg-black text-[#0f3242] hover:bg-[#f0f4f8] hover:text-[#1290ca] border border-[#d1d5db]'
-                  }`}
+                    }`}
                 >
                   {index + 1}
                 </Button>
               ))}
             </div>
           )}
-
-          {/* Mobile Categories (At Bottom) */}
-          <div className="flex flex-col gap-2 overflow-x-auto md:hidden bg-[#1290ca]/20 p-4 rounded-lg mt-8">
-            <h2 className="text-lg font-bold text-center mb-2">Categories</h2>
-            <Button
-              onClick={() => handleCategorySelect('All')}
-              variant={selectedCategory === 'All' ? 'default' : 'outline'}
-              className="flex-shrink-0 bg-white"
-            >
-              All
-            </Button>
-            {categories.map(category => (
-              <Button
-                key={category.id}
-                onClick={() => handleCategorySelect(category.id)}
-                variant={selectedCategory === category.id ? 'default' : 'outline'}
-                className="flex-shrink-0 bg-white text-black"
-              >
-                {category.name}
-              </Button>
-            ))}
-          </div>
         </main>
       </div>
     </div>

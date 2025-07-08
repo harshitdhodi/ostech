@@ -41,4 +41,27 @@ router.get('/view/:filename', (req, res) => {
     });
 });
 
+router.get('/catalogue/view/:filename', (req, res) => {
+    const { filename } = req.params;
+
+    if (!filename) {
+        return res.status(400).json({ message: 'Filename is required' });
+    }
+
+    const filePath = path.join(__dirname, '../catalogues', filename);
+
+    const ext = path.extname(filename).toLowerCase();
+    const contentType = ext === '.pdf' ? 'application/pdf' : 'application/octet-stream';
+
+    res.setHeader('Content-Type', contentType);
+    res.setHeader('Content-Disposition', 'inline; filename="' + filename + '"');
+
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error sending file:', err);
+            res.status(404).json({ message: 'File not found' });
+        }
+    });
+});
+
 module.exports = router;
