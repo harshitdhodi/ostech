@@ -185,7 +185,7 @@ export default function Sidebar() {
         <div className='font-bold text-white text-center pt-4 text-[20px] px-8'>
           {logo && logo.length > 0 && (
             <div>
-              <img src={`/api/logo/download/${logo[logo.length - 1].photo}`} alt="Logo" className="w-full h-auto" />
+              <img src={`/api/logo/download/${logo[logo.length - 1].photo}`} alt="Logo" className="w-1/2 h-1/2" />
             </div>
           )}
         </div>

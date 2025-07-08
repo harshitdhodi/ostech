@@ -1,0 +1,2610 @@
+{
+  "services": [
+    {
+      "_id": "673ed1a25a0d02985cea7356",
+      "title": "aertwe",
+      "details": "<p>sagse</p>",
+      "photo": [
+        "photo_1732170146430.png"
+      ],
+      "alt": [
+        "sfad"
+      ],
+      "slug": "aertwe",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "active",
+      "categories": [
+        ""
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "url": "http://localhost:3000/product/aertwe",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-21T06:22:26.439Z",
+      "createdAt": "2024-11-21T06:22:26.439Z",
+      "updatedAt": "2024-11-21T06:22:26.446Z",
+      "__v": 0
+    },
+    {
+      "_id": "6745956369bc2387e79d0516",
+      "title": "dsfva",
+      "details": "<p>dsasd</p>",
+      "photo": [
+        "photo_1732613475441.jpg"
+      ],
+      "alt": [
+        "ssdsd"
+      ],
+      "slug": "dsfva",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "active",
+      "categories": [
+        ""
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "url": "http://localhost:3000/product/dsfva",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-26T09:31:15.490Z",
+      "createdAt": "2024-11-26T09:31:15.491Z",
+      "updatedAt": "2024-11-26T09:31:15.496Z",
+      "__v": 0
+    }
+  ],
+  "globalpresences": [
+    {
+      "_id": "673832cd2a5ba1e98c971da9",
+      "country": "India",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1731736269554.webp",
+      "alt": "1",
+      "__v": 0
+    },
+    {
+      "_id": "673834ed5dc02fc8fc8f527e",
+      "country": "Nepal",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1731736813337.jpg",
+      "alt": "",
+      "__v": 0
+    },
+    {
+      "_id": "6738358143aebf2b7da8aa2c",
+      "country": "Sri Lanka",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1731736961722.png",
+      "alt": "121",
+      "__v": 0
+    },
+    {
+      "_id": "674006998f6c9afbad5e4de2",
+      "country": "Bangladesh",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1732249241735.png",
+      "alt": "1",
+      "__v": 0
+    },
+    {
+      "_id": "674006db8f6c9afbad5e4de5",
+      "country": "Tanzania",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1732249307617.png",
+      "alt": "2",
+      "__v": 0
+    },
+    {
+      "_id": "674006f48f6c9afbad5e4de8",
+      "country": "Nigeria",
+      "description": "Ostech Machines Pvt Ltd closely works for establishing customer base at Nepal, Bangladesh, Sri Lanka, Tanzania, Nigeria and UAE. We are continuously involved in providing various services in order satisfy our customer’s requirements.",
+      "photo": "photo_1732249332928.png",
+      "alt": "2",
+      "__v": 0
+    }
+  ],
+  "infrastructures": [],
+  "requirements": [],
+  "banners": [
+    {
+      "_id": "6735bc880b82797cb4c0a76e",
+      "section": "Home",
+      "title": "Turning Visions into reality ",
+      "photo": [],
+      "alt": [],
+      "details": "<p>Where your automation needs meet precision crafting</p>",
+      "priority": 4,
+      "status": "active",
+      "createdAt": "2024-11-14T09:02:00.375Z",
+      "updatedAt": "2024-11-14T09:02:00.375Z",
+      "__v": 16,
+      "imgTitle": [],
+      "video": "https://ik.imagekit.io/ytkqnjniu/video_1736320976571.mp4?updatedAt=1740039826737"
+    },
+    {
+      "_id": "6735bffd2a6aee2bdfc762bf",
+      "section": "Home",
+      "title": "Cutting Edge End of Line ",
+      "photo": [],
+      "alt": [],
+      "imgTitle": [],
+      "details": "<p>Automation Solutions</p>",
+      "priority": 2,
+      "status": "active",
+      "createdAt": "2024-11-14T09:16:45.463Z",
+      "updatedAt": "2024-11-14T09:16:45.463Z",
+      "__v": 5,
+      "video": "https://ik.imagekit.io/ytkqnjniu/video_1736320506570.mp4?updatedAt=1740040040954"
+    },
+    {
+      "_id": "67454666f4a8e7f4816c405f",
+      "section": "Home",
+      "title": " Efficient Soap Cutting and Stamping Solution",
+      "photo": [],
+      "alt": [],
+      "imgTitle": [],
+      "video": "https://ik.imagekit.io/ytkqnjniu/video_1736320671600.mp4?updatedAt=1740040100971",
+      "details": "<p>Leading the industry with innovative solutions</p>",
+      "priority": 1,
+      "status": "false",
+      "createdAt": "2024-11-26T03:54:14.199Z",
+      "updatedAt": "2024-11-26T03:54:14.199Z",
+      "__v": 0
+    },
+    {
+      "_id": "674570f583b5727e05c550a1",
+      "section": "About",
+      "title": "About Us",
+      "photo": [
+        "photo_1732604149849.jpg"
+      ],
+      "alt": [
+        "1",
+        "1"
+      ],
+      "imgTitle": [
+        "1"
+      ],
+      "details": "<p>About Us</p>",
+      "priority": 1,
+      "status": "active",
+      "createdAt": "2024-11-26T06:55:49.972Z",
+      "updatedAt": "2024-11-26T06:55:49.972Z",
+      "__v": 3
+    },
+    {
+      "_id": "67458f305996537d9b869c31",
+      "section": "Contact",
+      "title": "Contact Us",
+      "photo": [
+        "photo_1732611888530.jpg"
+      ],
+      "alt": [
+        "Contact Us"
+      ],
+      "imgTitle": [],
+      "details": "<p>Contact Us</p>",
+      "priority": 1,
+      "status": "active",
+      "createdAt": "2024-11-26T09:04:48.624Z",
+      "updatedAt": "2024-11-26T09:04:48.624Z",
+      "__v": 0
+    },
+    {
+      "_id": "67458fe25996537d9b869c76",
+      "section": "Resources",
+      "title": "Resources",
+      "photo": [
+        "photo_1732612066443.jpg"
+      ],
+      "alt": [
+        "Resources"
+      ],
+      "imgTitle": [],
+      "details": "<p>Resources</p>",
+      "priority": 1,
+      "status": "active",
+      "createdAt": "2024-11-26T09:07:46.541Z",
+      "updatedAt": "2024-11-26T09:07:46.541Z",
+      "__v": 0
+    },
+    {
+      "_id": "674590825996537d9b869cd8",
+      "section": "Products",
+      "title": "Our Products",
+      "photo": [
+        "photo_1732612226240.jpg"
+      ],
+      "alt": [
+        "Products",
+        "Products"
+      ],
+      "imgTitle": [
+        "Products"
+      ],
+      "details": "<p>﻿Products</p>",
+      "priority": 1,
+      "status": "active",
+      "createdAt": "2024-11-26T09:10:26.365Z",
+      "updatedAt": "2024-11-26T09:10:26.365Z",
+      "__v": 1
+    },
+    {
+      "_id": "6756cb86dafbbf05768fb427",
+      "section": "Global Presence",
+      "title": "Our Capabilities",
+      "photo": [
+        "photo_1733741595098.jpg"
+      ],
+      "alt": [
+        "Our Capabilities",
+        "Our Capabilities"
+      ],
+      "imgTitle": [],
+      "details": "<h3 class=\"ql-align-justify\">Ostech, with our location spanning more than 50,000 square feet and a team of well-trained, skilled employees, offers a diversified selection of solutions that cater to various industries. Our state-of-the-art facility allows us to deliver high-quality products and services, leveraging cutting-edge technology and expertise to meet the evolving needs of our clients. From customized manufacturing to innovative engineering services, Ostech is committed to providing effective, reliable solutions that drive success and growth for businesses worldwide.</h3><p><br></p>",
+      "priority": 1,
+      "status": "active",
+      "createdAt": "2024-12-09T10:50:46.596Z",
+      "updatedAt": "2024-12-09T10:50:46.596Z",
+      "__v": 2
+    }
+  ],
+  "images": [],
+  "benefits": [
+    {
+      "_id": "6735d5f7c6f4eef7451fe6d3",
+      "photo": [
+        "photo_1731581431574.webp"
+      ],
+      "title": "HIGH-END AND LOW-COST AUTOMATION",
+      "alt": [
+        "flip one"
+      ],
+      "description": "<p>We ensure high-end and low-cost automation. The reason that helps us to hold our clients and providing them complete satisfaction.</p>",
+      "__v": 0,
+      "imgtitle": [
+        "flip one"
+      ]
+    },
+    {
+      "_id": "6735d8b41682aae64cab6cc8",
+      "photo": [
+        "photo_1731582158525.jpg"
+      ],
+      "title": "IN-HOUSE DESIGNING AND MANAUFACTURING",
+      "alt": [
+        "flip2"
+      ],
+      "description": "<p>The above strengths can only be possible because of our excellent and elaborate in-house processes; we believe our products are 100% compliant and aim to deliver the best.</p>",
+      "__v": 1
+    },
+    {
+      "_id": "6735d8f22b5be1968c1d5cae",
+      "photo": [
+        "photo_1735629426743.webp"
+      ],
+      "title": "INCREASE EFFICIENCY",
+      "alt": [
+        "1"
+      ],
+      "description": "<p>With our machines you can be assured of the quality of production and the efficiency of the production process. With our expertise and experiences, we deliver the safest and most reliable technologies.</p>",
+      "__v": 2,
+      "imgtitle": []
+    },
+    {
+      "_id": "6735d9132b5be1968c1d5cb2",
+      "photo": [
+        "photo_1735629398960.webp"
+      ],
+      "title": "MAN-POWER EFFICIENCY",
+      "alt": [],
+      "description": "<p>We understand the biggest challenge in manufacturing sector is handling labour and the issues related to labour. Our machines help you save up on labour costs and labour usage significantly.</p>",
+      "__v": 1,
+      "imgtitle": [
+        "asds"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "_id": "6736de7d9ccf45b66c17e49e",
+      "title": "Belt Conveyor",
+      "details": "<p>The Belt Conveyor efficiently transports materials across various distances. Its durable design ensures smooth operation, reducing manual handling. Ideal for industries like manufacturing, logistics, and mining, it enhances productivity and safety. Customizable for different applications, it offers reliable performance, easy maintenance, and cost-effective material handling solutions.</p>",
+      "homeDetail": "<p><span style=\"color: rgb(107, 114, 128); background-color: rgb(255, 255, 255);\">Efficient Soap Cutting, Billet Shaping, and Stamping Solution</span></p>",
+      "keyFeature": [
+        " High efficiency and reliability in material transport.",
+        "Reduces manual handling, improving worker safety.",
+        " Customizable design to suit various applications.",
+        "Easy maintenance for long-term operation.",
+        "Cost-effective solution for material handling needs.",
+        "Durable construction for reliable performance."
+      ],
+      "photo": [
+        "photo_1732178095109.jpg",
+        "photo_1732178095110.png"
+      ],
+      "alt": [
+        "1",
+        "2"
+      ],
+      "slug": "belt-conveyor",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "popular",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/belt-conveyor",
+      "priority": 0.1,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T05:39:09.763Z",
+      "createdAt": "2024-11-15T05:39:09.763Z",
+      "updatedAt": "2025-01-07T10:20:49.398Z",
+      "__v": 6,
+      "imgtitle": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "_id": "673814488a0d322b925d3eab",
+      "title": "Loading Conveyor",
+      "details": "<p>The Loading Conveyor efficiently facilitates the loading and unloading of materials in various industries.</p><p>Its robust design ensures smooth operation, minimizing manual effort during material transfer. Perfect for applications in sectors such as warehousing, logistics, and shipping, it boosts productivity and operational efficiency. With customizable configurations, the loading conveyor is tailored for diverse tasks, providing reliable performance, ease of maintenance, and a cost-effective solution for material handling during loading processes.</p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Fully automatic Loading Conveyor with digital Counter.</span></p>",
+      "keyFeature": [
+        "Reduces manual handling, improving worker safety.",
+        "High efficiency and reliability in material transport.",
+        "Customizable design to suit various applications.",
+        "Easy maintenance for long-term operation.",
+        "Cost-effective solution for material handling needs.",
+        "Durable construction for reliable performance."
+      ],
+      "photo": [
+        "photo_1732178145595.jpg",
+        "photo_1736319810113.jpg",
+        "photo_1736319810119.png"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "slug": "loading-conveyor",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/loading-conveyor",
+      "priority": 0.2,
+      "changeFreq": "",
+      "lastmod": "2024-11-16T03:40:56.944Z",
+      "createdAt": "2024-11-16T03:40:56.944Z",
+      "updatedAt": "2025-01-08T07:03:12.860Z",
+      "__v": 8,
+      "imgtitle": [
+        "1"
+      ]
+    },
+    {
+      "_id": "6738818e270bcefb9d253ce4",
+      "title": "Customized Solution",
+      "details": "<p>We are specialists when it comes to developing customized solutions and are inspired by challenging assignments. We can take responsibility for entire processes, from problem solving and conceptual models, to finished equipment with the necessary documentation.</p><p>We have developed, constructed and installed a great variety of purpose built mechanical equipment.</p><p>The Company has provided solutions for many companies by modifying our existing products or designing a custom product tailored to their specifications using our Product Customization Service.</p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">End to end services from documentation</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Cost-effective solution for material handling needs",
+        "Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1732082229077.jpg",
+        "photo_1732082229086.jpg",
+        "photo_1732082229090.jpg",
+        "photo_1732082229093.jpg"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "slug": "customized-solution",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d41dba83d59e2bf8d130"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/customized-solution",
+      "priority": 0.3,
+      "changeFreq": "",
+      "lastmod": "2024-11-16T11:27:10.444Z",
+      "createdAt": "2024-11-16T11:27:10.444Z",
+      "updatedAt": "2024-11-20T05:41:40.459Z",
+      "__v": 1
+    },
+    {
+      "_id": "673c1f0260d1d59d539a520a",
+      "title": "Slat Conveyors",
+      "details": "<p>Slat conveyors consist of endless chains, driven by electric motors operating through reduction gears and sprockets, with attached spaced slats to carry objects that would damage a belt because of sharp edges or heavy weights.</p><p><br></p><p>Slat conveyors can be used in severe applications such as handling hot, oily, or abrasive material where rubber or canvas belt conveyors are impractical. Slat conveyors can be made of wood, formed steel or structural steel slats. The type of slat is determined by size, weight, and properties of the product being conveyed. Slat conveyors are extremely versatile in handling a multitude of products, from raw materials, through manufacturing process, to finished products. Conveyors have slats attached to double-strand steel sidebar bushed roller chains and are available in all practical widths, lengths and heights</p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Driven by electric motors and consists of endless chain used where rubber or canvas belt conveyors are impractical.&nbsp;</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        " Customizable design to suit various applications",
+        "Easy maintenance for long-term operation",
+        "Cost-effective solution for material handling needs",
+        " Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1735885445578.png",
+        "photo_1736393151458.png"
+      ],
+      "alt": [
+        "3",
+        "salt conveyor"
+      ],
+      "slug": "slat-conveyors",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "popular",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/slat-conveyors",
+      "priority": 0.6,
+      "changeFreq": "",
+      "lastmod": "2024-11-19T05:15:46.768Z",
+      "createdAt": "2024-11-19T05:15:46.768Z",
+      "updatedAt": "2025-01-09T03:25:37.126Z",
+      "__v": 8,
+      "imgtitle": []
+    },
+    {
+      "_id": "673d746e4e5edb4962436fb3",
+      "title": "Roller Conveyors",
+      "details": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">To help industry convey light or heavy goods, Om Sai Enterprises offers custom roller bed conveyors. These roller conveyors are available in both chain- and belt-driven models.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">All&nbsp;roller conveyors are ruggedly constructed for dependable operation and are available in a variety of standard roller bed conveyor configurations.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">﻿Roller conveyors are the proper choice when you need to side load, push off, accumulate a product or adjust pressure on carrying rollers. We offer five different types; chain driven, belt driven, line shaft driven, accumulation, or non-powered (gravity). Using roller conveyors instead of slider bed conveyors adds versatility to the type of transfers, diverters and stops that can be used in a system. Rollers are available in mild steel, galvanized, plastic or stainless steel.</span></p>",
+      "homeDetail": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Available in chain and belt-driven models, ruggedly constructed along with various standard roller bed conveyor configurations.</span></p>",
+      "keyFeature": [
+        " High efficiency and reliability in material transport.",
+        "Reduces manual handling, improving worker safety.",
+        "Customizable design to suit various applications.",
+        "Easy maintenance for long-term operation."
+      ],
+      "photo": [
+        "photo_1732178272927.png",
+        "photo_1732178272932.png",
+        "photo_1732178272941.png"
+      ],
+      "alt": [
+        "2",
+        "3",
+        "4"
+      ],
+      "slug": "roller-conveyors",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/roller-conveyors",
+      "priority": 0.7,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T05:32:30.754Z",
+      "createdAt": "2024-11-20T05:32:30.754Z",
+      "updatedAt": "2025-01-03T06:25:06.461Z",
+      "__v": 4,
+      "imgtitle": []
+    },
+    {
+      "_id": "673d75304e5edb4962437016",
+      "title": "Modular Conveyor",
+      "details": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Modular Conveyor is a pre-engineered, value-priced, line of conveyors. We specialise in the design and manufacture of conveyors and components for the materials handling industry. New designs &amp; improving on existing product designs are hallmarks of Om Sai Enterprises and part of what makes us a leader in our field. we bring to the Material Handling Equipment Industry reliable conveyor systems customized to our clients requirements. Our unique lightweight extruded aluminum modular sections are easy to assemble without needing technicians and will provide years of safe, trouble free.</span></p>",
+      "homeDetail": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Specialized to design for materials handling industry, with focus on innovation of new designs and improving the existing designs.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport.",
+        "Reduces manual handling, improving worker safety.",
+        "Customizable design to suit various applications.",
+        " Easy maintenance for long-term operation."
+      ],
+      "photo": [
+        "photo_1732080944337.png",
+        "photo_1732080944342.jpg",
+        "photo_1732080944347.jpg"
+      ],
+      "alt": [
+        "2",
+        "3",
+        "4"
+      ],
+      "slug": "modular-conveyor",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/modular-conveyor",
+      "priority": 0.9,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T05:35:44.350Z",
+      "createdAt": "2024-11-20T05:35:44.350Z",
+      "updatedAt": "2025-01-03T05:54:02.717Z",
+      "__v": 1,
+      "imgtitle": []
+    },
+    {
+      "_id": "673d761f4e5edb4962437065",
+      "title": "Retractable Conveyors",
+      "details": "<p>This is a special conveyor belt whose main feature is that it can retract itself to lay products over a flat surface. This way, the products are laid gently, even over another conveyor belt.</p><p><br></p><p>Retractable conveyor systems are used in many industries, but most often in food and pharmaceutical. It doesn’t matter if you’re familiar with retractable conveyors using the terms transpositors, shuttles, dealers or reciprocators; one thing is certain: speed is the determining factor in its performance.</p><p><br></p><p>To further explain these devices, imagine dealers as dealing out rows of products, transpositors as transporting product in another direction, shuttles moving product in a number of directions back and forth, and so on.</p><p>For the food processing industry, retractable conveyors need to be really fast and reliable. They must also be able to handle frequent wash-downs.</p>",
+      "homeDetail": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Retracting itself so that products can be laid gently on a flat surface is the main feature , mostly used in food and pharmaceutical industry.&nbsp;</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport,Reduces manual handling, improving worker safety,Customizable design to suit various applications,Easy maintenance for long-term operation"
+      ],
+      "photo": [
+        "photo_1735884707170.jpg",
+        "photo_1735884707172.png",
+        "photo_1735884707173.png",
+        "photo_1735884707177.jpg"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "slug": "retractable-conveyors",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "popular",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/retractable-conveyors",
+      "priority": 1,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T05:39:43.771Z",
+      "createdAt": "2024-11-20T05:39:43.771Z",
+      "updatedAt": "2025-01-03T06:07:32.124Z",
+      "__v": 3,
+      "imgtitle": []
+    },
+    {
+      "_id": "673d77f83e9e0a6499fdcd08",
+      "title": "ST06",
+      "details": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">The automatic soap cutting and stamping machine is used to cut soap bar from the plodder, Cut the soap to billets&nbsp;and stamp the necessary logo. With the years of experience and backed by the team of industrial experts, we are able to offer a huge array of Automatic Soap Stamping Machines to our clients. These Machines are aesthetically designed and precision-engineered for their higher functionality and durable work life. Moreover, all these Automatic Soap Stamping Machines are rigidly tested on various quality parameters to deliver a flawless range at the client’s end.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Used to cut the soap bar from plodder, then break them into billets and finally stamp the required logo.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Customizable design to suit various applications",
+        " Easy maintenance for long-term operation"
+      ],
+      "photo": [
+        "photo_1737089515976.png",
+        "photo_1737024347526.png"
+      ],
+      "alt": [
+        "auto stamper",
+        "auto stamper"
+      ],
+      "slug": "st06",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19fc079eae6c63bc250d"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/st06",
+      "priority": 0.4,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T05:47:36.044Z",
+      "createdAt": "2024-11-20T05:47:36.044Z",
+      "updatedAt": "2025-01-17T04:49:29.952Z",
+      "__v": 49,
+      "imgtitle": [
+        "auto stamper",
+        "auto stamper"
+      ],
+      "isVisible": false
+    },
+    {
+      "_id": "673d78a73e9e0a6499fdcd44",
+      "title": "Machine Spares",
+      "details": "<p>Plants and systems are ever more complex. Only if all parts of a system are compatible with each other and are of the same high quality, is it possible to ensure that operations run smoothly.</p><p>Om Sai spare parts are manufactured with great care, fit effortlessly into systems as a whole when installed and ensure that the plant continues to operate and produce to the usual high quality standards.</p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">High quality, manufactured with great care. Fits effortlessly into the system during installation and ensure superior quality output.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Customizable design to suit various applications",
+        "Easy maintenance for long-term operation"
+      ],
+      "photo": [
+        "photo_1732092731969.jpg",
+        "photo_1736306092383.jpg",
+        "photo_1736306092385.jpg"
+      ],
+      "alt": [
+        "4",
+        "2",
+        "3"
+      ],
+      "slug": "machine-spares",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19e2079eae6c63bc2506"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/machine-spares",
+      "priority": 0.91,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T05:50:31.980Z",
+      "createdAt": "2024-11-20T05:50:31.980Z",
+      "updatedAt": "2025-01-08T03:13:59.172Z",
+      "__v": 6,
+      "imgtitle": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "_id": "673d89080441843cfdbb3205",
+      "title": "Single Head",
+      "details": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Om Sai Enterprises is an innovative company whose core focus is to produce “end-of-line” packaging solutions. Our product lines include case packing, robotic palletizing, cartoners and full end-of-line integration up to wrapped and labeled pallets ready for truck or warehouse. For case packers we offer conventional horizontal and vertical packers as well as the latest in robotic case packing. Our palletizing line encompasses our unique family of low cost small footprint Robox palletizers to multi -line multi-SKU systems. To further compliment our product line we supply and integrate ancillary equipment such as Automatic Guided Carts, conveyors, printers, accumulators, readers, pallet and sheet dispensers and other related equipment to provide a complete solution tailored to your needs.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">End-of-line integration and a complete solution to tailor the needs for our customers.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Easy maintenance for long-term operation",
+        "Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1736166233451.JPG",
+        "photo_1732081349085.jpg"
+      ],
+      "alt": [
+        "4"
+      ],
+      "slug": "single-head",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "popular",
+      "categories": [
+        "677e19a3079eae6c63bc24c5"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/single-head",
+      "priority": 0.5,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T07:00:24.267Z",
+      "createdAt": "2024-11-20T07:00:24.267Z",
+      "updatedAt": "2025-01-17T04:26:42.577Z",
+      "__v": 22,
+      "imgtitle": [],
+      "isVisible": true
+    },
+    {
+      "_id": "673d89b70441843cfdbb3252",
+      "title": "Robotics Arm for Pick-n-Place",
+      "details": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Pick-and-place operations, such as palletizing, are one of the many applications of robotic manipulators. They are often employed to increase productivity in a setting where tasks can be repetitive and laborious such as packaging and assembly operations.</span></p><p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Application can also be in removing humans from hazardous work, such as the use of robotic arms in nuclear decommissioning tasks and the increased level of intelligence integrated in some robotic arms of today means they can even work in collaboration with humans While the operations of a pick-and-place robot can be customized by appropriate programming, developing an accurate model to simulate the motions of the robot can be used to determine the reach and efficiency of the robot, estimate cycle time, and convey potential collision paths without any actual implementation on hardware. This can save time and money and also prevent possible damage to the robot.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">One of the robotic manipulators used for replacing work force in hazardous operations like nuclear decommissioning task. It is based on Fanuc Robotic Arm with servo driven systems.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Cost-effective solution for material handling needs",
+        " Customizable design to suit various applications"
+      ],
+      "photo": [
+        "photo_1732092652878.jpg",
+        "photo_1732092652898.jpg",
+        "photo_1732092652899.jpg",
+        "photo_1732092652917.jpg"
+      ],
+      "alt": [],
+      "slug": "robotics-arm-for-pick-n-place",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d453ba83d59e2bf8d13e"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/robotics-arm-for-pick-n-place",
+      "priority": 0.92,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T07:03:19.089Z",
+      "createdAt": "2024-11-20T07:03:19.089Z",
+      "updatedAt": "2024-11-20T08:50:31.027Z",
+      "__v": 4
+    },
+    {
+      "_id": "673d8a490441843cfdbb3298",
+      "title": "Sparklite",
+      "details": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">The most commonly used method for cleaning plastic injection molds today remains the somewhat antiquated process of scrubbing tooling and plates, Our latest innovation eliminates all the cons and risks involved in conventional methods. It is dedicated to nozzle cleaning processes using a heating rod.&nbsp;It is suitable for all molds, large and small, machinery is simple to use and effective at its work.&nbsp;</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Use in antiquated process of scrubbing tooling and plates, eliminates menace of conventional methods. Heating rod is used for nozzle cleaning process</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Easy maintenance for long-term operation",
+        "Customizable design to suit various applications",
+        "Reduces manual handling, improving worker safety"
+      ],
+      "photo": [
+        "photo_1736393516585.jpg",
+        "photo_1736393516588.jpg",
+        "photo_1736393516593.jpg"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "slug": "sparklite",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "6736d46eba83d59e2bf8d145"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/sparklite",
+      "priority": 0.97,
+      "changeFreq": "",
+      "lastmod": "2024-11-20T07:05:45.587Z",
+      "createdAt": "2024-11-20T07:05:45.587Z",
+      "updatedAt": "2025-01-09T03:31:16.151Z",
+      "__v": 3,
+      "imgtitle": []
+    },
+    {
+      "_id": "677383892f34222b70bda24e",
+      "title": "Rotary Bagger",
+      "details": "<p>The rotary bagger represents a cutting-edge solution for high-volume packaging operations, designed to improve productivity and minimize downtime. Unlike traditional packaging methods, which often involve cumbersome and time-consuming manual labor, this machine automates the process, providing a consistent and efficient output.</p><p>One of its standout features is its enhanced cleaning system. The rotary bagger eliminates the outdated scrubbing tools and plates commonly used in older packaging machines. This advancement significantly reduces the risk of contamination and improves overall hygiene standards, making it ideal for industries with strict quality control requirements.</p><p>To ensure the system operates seamlessly, the rotary bagger is equipped with a specialized heating rod that aids in the nozzle cleaning process. This technology ensures that nozzles are kept free from blockages and residues, maintaining optimal performance and preventing costly downtime.</p><p>With its robust design and innovative features, the rotary bagger is an essential investment for businesses looking to boost efficiency, reduce operational risks, and achieve higher throughput in their packaging processes.</p>",
+      "homeDetail": "<p>The rotary bagger offers an advanced solution for packaging, designed to streamline operations while enhancing efficiency and safety</p>",
+      "keyFeature": [
+        "Reduces manual labor for improved safety.",
+        "High-efficiency packaging with consistent results.",
+        "Customizable design for different materials.",
+        "Easy maintenance for reduced downtime",
+        "Cost-effective with high ROI.",
+        "Durable construction for reliable performance."
+      ],
+      "photo": [
+        "photo_1735623561717.jpeg",
+        "photo_1735623561718.jpeg"
+      ],
+      "alt": [
+        "rb1",
+        "rb2"
+      ],
+      "imgtitle": [
+        "rb1",
+        "rb2"
+      ],
+      "slug": "rotary-bagger",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "popular",
+      "categories": [
+        "6773823c2f34222b70bda22a"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/rotary-bagger",
+      "priority": 0.02,
+      "changeFreq": "",
+      "lastmod": "2024-12-31T05:39:21.728Z",
+      "createdAt": "2024-12-31T05:39:21.728Z",
+      "updatedAt": "2024-12-31T05:39:21.729Z",
+      "__v": 0
+    },
+    {
+      "_id": "677df08fab9a9245ed036232",
+      "title": "ST400",
+      "details": "<p><span style=\"color: rgb(85, 85, 85);\">The automatic soap cutting and stamping machine is used to cut soap bar from the plodder, Cut the soap to billets&nbsp;and stamp the necessary logo. With the years of experience and backed by the team of industrial experts, we are able to offer a huge array of Automatic Soap Stamping Machines to our clients. These Machines are aesthetically designed and precision-engineered for their higher functionality and durable work life. Moreover, all these Automatic Soap Stamping Machines are rigidly tested on various quality parameters to deliver a flawless range at the client’s end.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85);\">Used to cut the soap bar from plodder, then break them into billets and finally stamp the required logo.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Easy maintenance for long-term operation",
+        "Customizable design to suit various applications"
+      ],
+      "photo": [
+        "photo_1736306904717.png",
+        "photo_1736307102441.png"
+      ],
+      "alt": [
+        "2",
+        "2"
+      ],
+      "imgtitle": [],
+      "slug": "st400",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19fc079eae6c63bc250d"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/st400",
+      "priority": 0.1,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T03:27:11.435Z",
+      "createdAt": "2025-01-08T03:27:11.435Z",
+      "updatedAt": "2025-01-08T03:31:18.533Z",
+      "__v": 1,
+      "isVisible": false
+    },
+    {
+      "_id": "677df211ab9a9245ed03631a",
+      "title": "SERVO",
+      "details": "<p><span style=\"color: rgb(85, 85, 85);\">The automatic soap cutting and stamping machine is used to cut soap bar from the plodder, Cut the soap to billets&nbsp;and stamp the necessary logo. With the years of experience and backed by the team of industrial experts, we are able to offer a huge array of Automatic Soap Stamping Machines to our clients. These Machines are aesthetically designed and precision-engineered for their higher functionality and durable work life. Moreover, all these Automatic Soap Stamping Machines are rigidly tested on various quality parameters to deliver a flawless range at the client’s end.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85);\">Used to cut the soap bar from plodder, then break them into billets and finally stamp the required logo.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Easy maintenance for long-term operation",
+        "Customizable design to suit various applications"
+      ],
+      "photo": [
+        "photo_1736307217859.png"
+      ],
+      "alt": [
+        "2"
+      ],
+      "imgtitle": [
+        "",
+        ""
+      ],
+      "slug": "servo",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19fc079eae6c63bc250d"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/servo",
+      "priority": 0.18,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T03:33:37.879Z",
+      "createdAt": "2025-01-08T03:33:37.879Z",
+      "updatedAt": "2025-01-11T09:49:56.900Z",
+      "__v": 1
+    },
+    {
+      "_id": "677df9c44dced2b9b82cc45b",
+      "title": "Twin head",
+      "details": "<p><span style=\"color: rgb(85, 85, 85);\">Om Sai Enterprises is an innovative company whose core focus is to produce “end-of-line” packaging solutions. Our product lines include case packing, robotic palletizing, cartoners and full end-of-line integration up to wrapped and labeled pallets ready for truck or warehouse. For case packers we offer conventional horizontal and vertical packers as well as the latest in robotic case packing. Our palletizing line encompasses our unique family of low cost small footprint Robox palletizers to multi -line multi-SKU systems. To further compliment our product line we supply and integrate ancillary equipment such as Automatic Guided Carts, conveyors, printers, accumulators, readers, pallet and sheet dispensers and other related equipment to provide a complete solution tailored to your needs.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85);\">End-of-line integration and a complete solution to tailor the needs for our customers.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Easy maintenance for long-term operation",
+        "Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1736309188140.JPG",
+        "photo_1736309188309.JPG",
+        "photo_1736309188414.JPG"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "34"
+      ],
+      "imgtitle": [
+        "2",
+        "2",
+        "4"
+      ],
+      "slug": "twin-head",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19a3079eae6c63bc24c5"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/twin-head",
+      "priority": 0.1,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T04:06:28.539Z",
+      "createdAt": "2025-01-08T04:06:28.539Z",
+      "updatedAt": "2025-01-08T04:06:28.543Z",
+      "__v": 0,
+      "isVisible": false
+    },
+    {
+      "_id": "677dfaa04dced2b9b82cc4d7",
+      "title": "Combi",
+      "details": "<p><span style=\"color: rgb(85, 85, 85);\">Om Sai Enterprises is an innovative company whose core focus is to produce “end-of-line” packaging solutions. Our product lines include case packing, robotic palletizing, cartoners and full end-of-line integration up to wrapped and labeled pallets ready for truck or warehouse. For case packers we offer conventional horizontal and vertical packers as well as the latest in robotic case packing. Our palletizing line encompasses our unique family of low cost small footprint Robox palletizers to multi -line multi-SKU systems. To further compliment our product line we supply and integrate ancillary equipment such as Automatic Guided Carts, conveyors, printers, accumulators, readers, pallet and sheet dispensers and other related equipment to provide a complete solution tailored to your needs.</span></p>",
+      "homeDetail": "<p><span style=\"color: rgb(85, 85, 85);\">End-of-line integration and a complete solution to tailor the needs for our customers.</span></p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        " Reduces manual handling, improving worker safety",
+        "Easy maintenance for long-term operation",
+        " Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1736309408531.JPG",
+        "photo_1736309408647.JPG",
+        "photo_1737092025702.png"
+      ],
+      "alt": [
+        "Combi",
+        "Combi",
+        "Combi2"
+      ],
+      "imgtitle": [
+        "Combi",
+        "Combi",
+        "combi2"
+      ],
+      "slug": "combi",
+      "metatitle": "1",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "normal",
+      "categories": [
+        "677e19a3079eae6c63bc24c5"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/combi",
+      "priority": 0.1,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T04:10:08.860Z",
+      "createdAt": "2025-01-08T04:10:08.860Z",
+      "updatedAt": "2025-01-17T05:28:02.765Z",
+      "__v": 1,
+      "isVisible": false
+    },
+    {
+      "_id": "677e5679812fa3fb4c717c93",
+      "title": "Wedge Conveyor",
+      "details": "<p>The wedge conveyor represents a cutting-edge solution for high-volume material handling operations, designed to improve productivity and minimize downtime. Unlike traditional handling methods, which often involve cumbersome and time-consuming manual labor, this machine automates the process, providing a consistent and efficient output.</p><p>One of its standout features is its enhanced cleaning system. The wedge conveyor eliminates the outdated scrubbing tools and plates commonly used in older material handling equipment. This advancement significantly reduces the risk of contamination and improves overall hygiene standards, making it ideal for industries with strict quality control requirements.</p><p>To ensure the system operates seamlessly, the wedge conveyor is equipped with a specialized heating rod that aids in the cleaning process.</p><p><br></p>",
+      "homeDetail": "<p>The wedge conveyor offers an advanced solution for material handling, designed to streamline operations while enhancing efficiency and safety.</p>",
+      "keyFeature": [
+        "High efficiency and reliability in material transport",
+        "Reduces manual handling, improving worker safety",
+        "Customizable design to suit various applications",
+        "Easy maintenance for long-term operation",
+        "Cost-effective solution for material handling needs",
+        "Durable construction for reliable performance"
+      ],
+      "photo": [
+        "photo_1736332920928.png",
+        "photo_1736332921085.png",
+        "photo_1736332921275.png"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "imgtitle": [
+        "1",
+        "2",
+        "3"
+      ],
+      "slug": "wedge-conveyor",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "status": "inactive",
+      "categories": [
+        "6736d3dfba83d59e2bf8d129"
+      ],
+      "subcategories": [
+        ""
+      ],
+      "subSubcategories": [
+        ""
+      ],
+      "benefits": [],
+      "catalogue": "",
+      "url": "http://localhost:3000/product/wedge-conveyor",
+      "priority": 0.14,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T10:42:01.319Z",
+      "createdAt": "2025-01-08T10:42:01.319Z",
+      "updatedAt": "2025-01-08T10:42:01.326Z",
+      "__v": 0
+    }
+  ],
+  "pagecontents": [],
+  "aboutcompanies": [
+    {
+      "_id": "673594c627486f0480c5d91f",
+      "title": "Transforming Ideas With Innovations",
+      "description": "<p><strong style=\"color: rgb(18, 144, 202); background-color: rgb(230, 230, 230);\">Safety, Quality, Excellence.</strong></p><p>With our excellent reputation, we are proud to be the best low-cost SPM (Special Purpose Machineries) builder for Detergent, Pharmaceuticals, Paints, FMCG, and Chemical industries worldwide.&nbsp;Founded by the dynamic Mr. Anil Singh, OSTECH has been serving the global market for 20+ years.</p><p><br></p><p>Our core values lie in the true meaning of teamwork, dedication and delivering excellence. We strive to maintain these values throughout the entire workflow from start to finish, thus guaranteeing 100% customer delight.</p>",
+      "longDescription": "<p><strong style=\"background-color: rgb(230, 230, 230); color: rgb(18, 144, 202);\">Safety, Quality, Excellence.</strong></p><p>With our excellent reputation, we are proud to be the best low-cost SPM (Special Purpose Machineries) builder for Detergent, Pharmaceuticals, Paints, FMCG, and Chemical industries worldwide.&nbsp;Founded by the dynamic Mr. Anil Singh, OSTECH has been serving the global market for 20+ years.</p><p><br></p><p>Our core values lie in the true meaning of teamwork, dedication and delivering excellence. We strive to maintain these values throughout the entire workflow from start to finish, thus guaranteeing 100% customer delight. Our Success is driven by a Customer-centric approach, where we prioritize understanding the specific requirements of our clients. This enables us to design and build special purpose machineries that not only meet but exceed industry standards.</p>",
+      "videoLink": "#",
+      "photo": [
+        "photo_1731564742658.jpg",
+        "photo_1731564742703.jpg",
+        "photo_1735627802931.jpg"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "status": "active",
+      "createdAt": "2024-11-14T06:12:22.796Z",
+      "updatedAt": "2024-11-14T06:12:22.796Z",
+      "__v": 2,
+      "imgName": [
+        "dsafqwerf"
+      ],
+      "imgtitle": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "whyservices": [],
+  "manufactureprocesses": [
+    {
+      "_id": "675f9e92c1199ffb0f916366",
+      "title": "1. Requirements Analysis",
+      "photo": "photo_1734319762814_requirement analysis.png",
+      "imgTitle": "analysis",
+      "altName": "analysis",
+      "description": "<p>Understand Client Needs:</p><p>\t- Product type (e.g., bottles, boxes)</p><p>\t- Production rate (e.g., items per minute)</p><p>\t- Packaging type (e.g., cartons, cases)</p><p>Define Scope:</p><p>\t- Clarify machine functions</p><p>\t- Integration requirements with existing systems</p><p>\t- Constraints (space, budget, regulations)</p><p><br></p>",
+      "createdAt": "2024-12-16T03:29:22.818Z",
+      "updatedAt": "2024-12-16T03:29:22.818Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f9eddc1199ffb0f91636b",
+      "title": "2. Conceptual Design",
+      "photo": "photo_1734319837389_conceptual design.png",
+      "imgTitle": "conceptual design",
+      "altName": "conceptual design",
+      "description": "<p>Preliminary Layouts:</p><p>\t- Sketch initial concepts or create basic 3D models</p><p>\t- Decide machine type (rotary, linear, robotic, etc.)</p><p>Material Flow Diagram: Outline how materials move through the machine</p><p>Feasibility Study: Evaluate design practicality, cost, and timeline</p><p><br></p>",
+      "createdAt": "2024-12-16T03:30:37.391Z",
+      "updatedAt": "2024-12-16T03:30:37.391Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f9f2fc1199ffb0f91636e",
+      "title": "3. Detailed Engineering Design",
+      "photo": "photo_1734319919389_detailed engineering design.png",
+      "imgTitle": "Detailed Engineering Design",
+      "altName": "Detailed Engineering Design",
+      "description": "<p>Mechanical Design:</p><p>\t- Create detailed 3D CAD models for all components</p><p>\t- Design mechanisms for specific functions (e.g., picking, placing, sealing)</p><p>\t- Choose materials and tolerances</p><p>Electrical &amp; Control System Design:</p><p>\t- Design electrical schematics and select components (PLCs, sensors, actuators)</p><p>\t- Plan software for motion control and human-machine interface (HMI)</p><p>Safety &amp; Standards:</p><p>\t- Ensure compliance with safety regulations (e.g., OSHA, CE marking)</p><p>\t- Include emergency stops, guards, and interlocks</p><p><br></p>",
+      "createdAt": "2024-12-16T03:31:59.391Z",
+      "updatedAt": "2024-12-16T03:31:59.391Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f9f6cc1199ffb0f916371",
+      "title": "4. Prototyping & Simulation",
+      "photo": "photo_1734319980684_prototyping and simulation.png",
+      "imgTitle": "Prototyping",
+      "altName": "Prototyping",
+      "description": "<p>Virtual Simulation:</p><p>\t- Use simulation software to test material flow, speeds, and interactions</p><p>\t- Optimize processes and identify bottlenecks</p><p>Prototype Manufacturing:</p><p>\t- Build key modules or mechanisms for testing</p><p><br></p>",
+      "createdAt": "2024-12-16T03:33:00.687Z",
+      "updatedAt": "2024-12-16T03:33:00.687Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f9fa9c1199ffb0f916374",
+      "title": "5. Procurement",
+      "photo": "photo_1734320041028_procurement.png",
+      "imgTitle": "Procurement",
+      "altName": "Procurement",
+      "description": "<p>Material Sourcing:</p><p>\t- Order raw materials, standard components, and custom-manufactured parts</p><p>Vendor Management: Collaborate with suppliers to ensure quality and timely delivery</p><p><br></p>",
+      "createdAt": "2024-12-16T03:34:01.031Z",
+      "updatedAt": "2024-12-16T03:34:01.031Z",
+      "__v": 0
+    },
+    {
+      "_id": "675faac8c1199ffb0f916378",
+      "title": "6. Manufacturing",
+      "photo": "photo_1734322888730_manufacturing.png",
+      "imgTitle": "Manufacturing",
+      "altName": "Manufacturing",
+      "description": "<p>Fabrication:</p><p>\t- Manufacture parts (e.g., frames, rollers, cams) using CNC machining, laser cutting, or welding</p><p>\t- Ensure parts meet design tolerances</p><p>Assembly:</p><p>\t- Assemble mechanical components, electrical panels, and subsystems</p><p>\t- Install actuators, sensors, and control systems</p><p><br></p>",
+      "createdAt": "2024-12-16T04:21:28.733Z",
+      "updatedAt": "2024-12-16T04:21:28.733Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fab30c1199ffb0f91637b",
+      "title": "7. Integration",
+      "photo": "photo_1734322992459_integration.png",
+      "imgTitle": "Integration",
+      "altName": "Integration",
+      "description": "<p>Component Integration:</p><p>\t- Assemble the complete machine</p><p>\t- Connect mechanical, electrical, and control systems</p><p>Software Installation:</p><p>\t- Program the PLC, motion controllers, and HMI</p><p>\t- Integrate communication protocols (Ethernet/IP, Modbus)</p><p><br></p>",
+      "createdAt": "2024-12-16T04:23:12.462Z",
+      "updatedAt": "2024-12-16T04:23:12.462Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fab75c1199ffb0f91637e",
+      "title": "8. Testing & Validation",
+      "photo": "photo_1734323061619_testing.png",
+      "imgTitle": "Testing",
+      "altName": "Testing",
+      "description": "<p>Dry Run: Test the machine without products to check basic functionality</p><p>Performance Testing: Run with products to ensure the machine meets speed, accuracy, and reliability requirements</p><p>Safety Testing: Validate all safety features (e.g., guards, sensors)</p><p><br></p>",
+      "createdAt": "2024-12-16T04:24:21.621Z",
+      "updatedAt": "2024-12-16T04:24:21.621Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fabbbc1199ffb0f916381",
+      "title": "9. Installation & Commissioning",
+      "photo": "photo_1734323131906_manufacturing.png",
+      "imgTitle": "installation",
+      "altName": "installation",
+      "description": "<p>Site Preparation: Ensure space, power supply, and utilities are ready</p><p>On-Site Installation:</p><ul><li>- Transport and assemble the machine at the client's facility</li><li>- Align and calibrate the machine</li></ul><p>Operational Training: Train operators and maintenance staff</p><p><br></p>",
+      "createdAt": "2024-12-16T04:25:31.914Z",
+      "updatedAt": "2024-12-16T04:25:31.914Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fabf2c1199ffb0f916384",
+      "title": "10. Documentation & Handover",
+      "photo": "photo_1734323186979_documentation.png",
+      "imgTitle": "Documentation",
+      "altName": "Documentation",
+      "description": "<p>Technical Documentation: Provide manuals, drawings, and maintenance guides</p><p>Handover: Finalize the project and obtain client sign-off</p><p><br></p>",
+      "createdAt": "2024-12-16T04:26:26.981Z",
+      "updatedAt": "2024-12-16T04:26:26.981Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fac2cc1199ffb0f916387",
+      "title": "11. Post-Installation Support",
+      "photo": "photo_1734323244893_post-installation.png",
+      "imgTitle": "installation support",
+      "altName": "installation support",
+      "description": "<p>Warranty Support: Offer maintenance and troubleshooting support</p><p>Upgrades &amp; Enhancements: Suggest and implement improvements as needed</p><p><br></p>",
+      "createdAt": "2024-12-16T04:27:24.896Z",
+      "updatedAt": "2024-12-16T04:27:24.896Z",
+      "__v": 0
+    }
+  ],
+  "whychooseus": [
+    {
+      "_id": "6737266f85a86ef678b05702",
+      "photo": [
+        "photo_1731669923331.gif"
+      ],
+      "title": "Custom Solutions",
+      "alt": [
+        "1"
+      ],
+      "imgTitle": [
+        "1"
+      ],
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255);\">Tailored roller bed conveyors to meet your specific industry requirements, ensuring optimal performance for conveying both light and heavy goods.</span></p>",
+      "__v": 2
+    },
+    {
+      "_id": "67373037657b3fba422961de",
+      "photo": [
+        "photo_1731670071792.gif"
+      ],
+      "title": "Versatility in Design",
+      "alt": [
+        "2"
+      ],
+      "imgTitle": [
+        "2"
+      ],
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255);\">Our roller conveyors come in both chain- and belt-driven models, providing flexibility in choosing the right conveyor system for your applications.</span></p>",
+      "__v": 0
+    },
+    {
+      "_id": "673d7a763e9e0a6499fdcd98",
+      "photo": [
+        "photo_1732082294396.gif"
+      ],
+      "title": "Varied Types Available",
+      "alt": [
+        "1"
+      ],
+      "imgTitle": [
+        "1"
+      ],
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255);\">Choose from five different types of roller conveyors—chain driven, belt driven, line shaft driven, accumulation, or non-powered (gravity)—offering versatility in handling transfers, diverters, and stops within your system.</span></p>",
+      "__v": 0
+    },
+    {
+      "_id": "673d7a953e9e0a6499fdcd9e",
+      "photo": [
+        "photo_1732082325451.gif"
+      ],
+      "title": "Material Options",
+      "alt": [
+        "1"
+      ],
+      "imgTitle": [
+        "1"
+      ],
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255);\">Rollers are available in mild steel, galvanized, plastic, or stainless steel, allowing you to select the most suitable material for your specific operational environment.</span></p>",
+      "__v": 0
+    }
+  ],
+  "aboutuspoints": [],
+  "admins": [
+    {
+      "_id": "66cebab9160c33a6fef6a9cf",
+      "email": "admin@gmail.com",
+      "password": "$2a$10$FGS.Mo1PX5j2vgIxqEbDeeyWfvOkxp5VmGaRX.nj6hseB3ugfxIzC",
+      "resetPasswordOTP": null,
+      "resetPasswordExpires": null,
+      "firstname": "Admin",
+      "lastname": "",
+      "photo": "photo_1738649806284.png",
+      "__v": 0
+    },
+    {
+      "_id": "673ea790fb948862f0c7f9a1",
+      "email": "rndtechnosoft@gmail.com",
+      "password": "$2b$10$D2rX6watgTNhvhW0zP52X.KC/KA.ETlXCaDinB2wso4Cd5tjURuuq",
+      "resetPasswordOTP": null,
+      "resetPasswordExpires": null,
+      "firstname": "harshit",
+      "lastname": "dhodi",
+      "photo": "photo_1732159376121.png",
+      "__v": 0
+    }
+  ],
+  "footers": [
+    {
+      "_id": "67381f802d108e40592b2ec2",
+      "newsletter": "Ostech Machines Pvt Ltd reflects quality workmanship from Gujarat in the field of machine building. With an integrated organizational approach and a growing distribution network, we have established a brand in the global arena.",
+      "instagramLink": "#i",
+      "facebookLink": "#f",
+      "googleLink": "https://www.youtube.com/@OSTECH-v2r",
+      "location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3740.6452117543895!2d72.90543607523843!3d20.35627038113016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1732259830175!5m2!1sen!2sin",
+      "phoneNo": "+91 99783 88388",
+      "phoneNo_2": "",
+      "email": "kamal.kaushik@ostech.in",
+      "email_2": "muskaan@ostech.in",
+      "address": "Factory Address: OSTECH Machines Pvt Ltd Plot no.121 Vibrant Business Park, GIDC, Vapi-396191, Gujarat",
+      "officeTime": "Office Timing: 9:00 AM - 6:00 PM",
+      "__v": 0
+    }
+  ],
+  "news": [],
+  "mymissions": [
+    {
+      "_id": "6736c005e151ac3632b4630d",
+      "__v": 5,
+      "alt": [
+        "Alt Text 1"
+      ],
+      "createdAt": "2024-11-15T03:29:07.669Z",
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(55, 65, 81);\">We aspire to be one of the largest groups in the SPM manufacturing sector. We aim to achieve the impossible and guarantee best-in-class service with diversified products across varied industrial segments.</span></p>",
+      "photo": [
+        "photo_1735628177504.jpeg"
+      ],
+      "status": "active",
+      "title": "Our Mission mission",
+      "updatedAt": "2024-12-31T06:56:17.516Z",
+      "imgTitle": [
+        "Image Title 1",
+        "Image Title 1"
+      ]
+    }
+  ],
+  "productcategories": [
+    {
+      "_id": "6736d3dfba83d59e2bf8d129",
+      "category": "Conveyors",
+      "slug": "conveyors",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/conveyors",
+      "priority": 1,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T04:53:51.920Z",
+      "subCategories": [],
+      "createdAt": "2024-11-15T04:53:51.921Z",
+      "updatedAt": "2024-11-15T04:53:51.921Z",
+      "__v": 0
+    },
+    {
+      "_id": "6736d41dba83d59e2bf8d130",
+      "category": "Customized Equipment Solution",
+      "slug": "customized-equipment-solution",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/customized-equipment-solution",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T04:54:53.712Z",
+      "subCategories": [],
+      "createdAt": "2024-11-15T04:54:53.712Z",
+      "updatedAt": "2024-11-15T04:54:53.712Z",
+      "__v": 0
+    },
+    {
+      "_id": "6736d453ba83d59e2bf8d13e",
+      "category": "Robotics Arms for Pick and Place",
+      "slug": "robotics-arms-for-pick-and-place",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/robotics-arms-for-pick-and-place",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T04:55:47.532Z",
+      "subCategories": [],
+      "createdAt": "2024-11-15T04:55:47.532Z",
+      "updatedAt": "2024-11-15T04:55:47.532Z",
+      "__v": 0
+    },
+    {
+      "_id": "6736d46eba83d59e2bf8d145",
+      "category": "Sparklite",
+      "slug": "sparklite",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/sparklite",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T04:56:14.286Z",
+      "subCategories": [],
+      "createdAt": "2024-11-15T04:56:14.286Z",
+      "updatedAt": "2024-11-15T04:56:14.286Z",
+      "__v": 0
+    },
+    {
+      "_id": "6736d486ba83d59e2bf8d14c",
+      "category": "Special Purpose Machine",
+      "slug": "special-purpose-machine",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/special-purpose-machine",
+      "priority": null,
+      "changeFreq": "",
+      "lastmod": "2024-11-15T04:56:38.138Z",
+      "subCategories": [],
+      "createdAt": "2024-11-15T04:56:38.138Z",
+      "updatedAt": "2024-11-15T04:56:38.138Z",
+      "__v": 0
+    },
+    {
+      "_id": "6773823c2f34222b70bda22a",
+      "category": "Rotary Bagger",
+      "slug": "rotary-bagger",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/rotary-bagger",
+      "priority": 0.03,
+      "changeFreq": "",
+      "lastmod": "2024-12-31T05:33:48.496Z",
+      "subCategories": [],
+      "createdAt": "2024-12-31T05:33:48.496Z",
+      "updatedAt": "2024-12-31T05:33:48.496Z",
+      "__v": 0
+    },
+    {
+      "_id": "677e19a3079eae6c63bc24c5",
+      "category": "Case packer",
+      "slug": "case-packer",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/case-packer",
+      "priority": 0.01,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T06:22:27.973Z",
+      "subCategories": [],
+      "createdAt": "2025-01-08T06:22:27.973Z",
+      "updatedAt": "2025-01-08T06:22:27.973Z",
+      "__v": 0
+    },
+    {
+      "_id": "677e19e2079eae6c63bc2506",
+      "category": "Machine Spares",
+      "slug": "machine-spares",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/machine-spares",
+      "priority": 0.11,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T06:23:30.458Z",
+      "subCategories": [],
+      "createdAt": "2025-01-08T06:23:30.459Z",
+      "updatedAt": "2025-01-08T06:23:30.459Z",
+      "__v": 0
+    },
+    {
+      "_id": "677e19fc079eae6c63bc250d",
+      "category": "Auto Stamper Machine",
+      "slug": "auto-stamper-machine",
+      "metatitle": "",
+      "metadescription": "",
+      "metakeywords": "",
+      "metacanonical": "",
+      "metalanguage": "",
+      "metaschema": "",
+      "otherMeta": "",
+      "url": "http://localhost:3000/productcategories/auto-stamper-machine",
+      "priority": 0.11,
+      "changeFreq": "",
+      "lastmod": "2025-01-08T06:23:56.725Z",
+      "subCategories": [],
+      "createdAt": "2025-01-08T06:23:56.725Z",
+      "updatedAt": "2025-01-08T06:23:56.725Z",
+      "__v": 0
+    }
+  ],
+  "productinquiries": [
+    {
+      "_id": "673ec2e536736f492f322d23",
+      "name": "vdfd",
+      "email": "gsd@gmail.com",
+      "phone": "1234567890",
+      "subject": "bxfgd",
+      "message": "cxbxfh",
+      "productName": "Belt Conveyor",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "utm_id": "",
+      "gclid": "",
+      "gcid_source": "",
+      "utm_content": "",
+      "utm_term": "",
+      "ipaddress": "103.83.155.90",
+      "date": "2024-11-21T05:19:33.387Z",
+      "__v": 0
+    },
+    {
+      "_id": "673ec4b0d113b85a5d5e4bac",
+      "name": "harshit",
+      "email": "hrshit.dhodi2108@gmail.com",
+      "phone": "1234512345",
+      "subject": "testing",
+      "message": "testing",
+      "productName": "Belt Conveyor",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "utm_id": "",
+      "gclid": "",
+      "gcid_source": "",
+      "utm_content": "",
+      "utm_term": "",
+      "ipaddress": "103.83.155.90",
+      "date": "2024-11-21T05:27:12.465Z",
+      "__v": 0
+    },
+    {
+      "_id": "67ea203b8c39f9dc111fcf4d",
+      "name": "Kajal Shrma",
+      "email": "kajalshrma@gmail.com",
+      "phone": "0962439421",
+      "subject": "hii",
+      "message": "hii",
+      "productName": "Loading Conveyor",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "utm_id": "",
+      "gclid": "",
+      "gcid_source": "",
+      "utm_content": "",
+      "utm_term": "",
+      "ipaddress": "103.83.155.90",
+      "date": "2025-03-31T04:55:23.351Z",
+      "__v": 0
+    },
+    {
+      "_id": "67ea20ba8c39f9dc111fcf4f",
+      "name": "Kajal Shrma",
+      "email": "kajalshrma@gmail.com",
+      "phone": "0962439421",
+      "subject": "hii",
+      "message": "hi",
+      "productName": "Loading Conveyor",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "utm_id": "",
+      "gclid": "",
+      "gcid_source": "",
+      "utm_content": "",
+      "utm_term": "",
+      "ipaddress": "103.83.155.90",
+      "date": "2025-03-31T04:57:30.665Z",
+      "__v": 0
+    }
+  ],
+  "infographics": [
+    {
+      "_id": "675d161eba25806b179f0f9a",
+      "title": "IN HOUSE DESIGN FACILITY",
+      "photo": "photo_1735619530024_design.png",
+      "description": "<ul><li><strong>Custom-Tailored Solutions</strong>: Our in-house design facility ensures that every project is uniquely crafted to meet specific client requirements, offering personalized and innovative design solutions.</li><li><strong>Seamless Collaboration:</strong> By managing the design process internally, we enable real-time communication and collaboration between the design team and other departments, ensuring faster turnaround times and superior quality control.</li></ul>",
+      "createdAt": "2024-12-14T05:22:38.986Z",
+      "updatedAt": "2024-12-31T04:48:08.626Z",
+      "__v": 0,
+      "altName": "abc",
+      "imgTitle": "abc"
+    },
+    {
+      "_id": "675d5fb71f2dd244ed8c51c6",
+      "title": "IN HOUSE MANUFACTURING",
+      "photo": "photo_1735620363888_manufacture.png",
+      "imgTitle": "1",
+      "altName": "1",
+      "description": "<ul><li><strong>Custom-Tailored Production</strong>: Our in-house manufacturing ensures that every product is precisely crafted to meet specific client requirements, delivering superior quality and customization.</li><li><strong>Efficient and Reliable</strong>: With manufacturing managed internally, we maintain strict quality control, streamline production, and reduce lead times for faster delivery.</li></ul>",
+      "createdAt": "2024-12-14T10:36:39.360Z",
+      "updatedAt": "2024-12-31T04:46:03.890Z",
+      "__v": 0
+    },
+    {
+      "_id": "675d5fd61f2dd244ed8c51c9",
+      "title": "IN HOUSE FABRICATION",
+      "photo": "photo_1735620560453_fabrication.png",
+      "imgTitle": "1",
+      "altName": "1",
+      "description": "<ul><li><strong>Precision and Quality</strong>: In-house fabrication guarantees meticulous craftsmanship and adherence to the highest quality standards for all components.</li><li><strong>Enhanced Flexibility</strong>: Internal fabrication allows us to adapt designs and processes quickly, ensuring timely delivery and client satisfaction.</li></ul>",
+      "createdAt": "2024-12-14T10:37:10.103Z",
+      "updatedAt": "2024-12-31T04:49:20.455Z",
+      "__v": 0
+    },
+    {
+      "_id": "675d5fed1f2dd244ed8c51cc",
+      "title": "IN HOUSE R&D",
+      "photo": "photo_1735620661669_RND.png",
+      "imgTitle": "1",
+      "altName": "1",
+      "description": "<ul><li><strong>Innovative Solutions</strong>: Our in-house R&amp;D focuses on continuous innovation, creating cutting-edge technologies and solutions that cater to evolving market demands.</li><li><strong>Competitive Advantage</strong>: By managing R&amp;D internally, we accelerate product development cycles and maintain a competitive edge through proprietary advancements.</li></ul>",
+      "createdAt": "2024-12-14T10:37:33.760Z",
+      "updatedAt": "2024-12-31T04:51:01.671Z",
+      "__v": 0
+    },
+    {
+      "_id": "675d60081f2dd244ed8c51cf",
+      "title": "IN HOUSE LOGIC AND PROGRAM DEVELOPMENT",
+      "photo": "photo_1735620768011_development.png",
+      "imgTitle": "1",
+      "altName": "1",
+      "description": "<ul><li><strong>Bespoke Solutions</strong>: Our in-house logic and program development provide customized, innovative software solutions tailored to individual project needs.</li><li><strong>Seamless Integration</strong>: By managing development internally, we ensure flawless coordination with hardware and other systems, resulting in efficient and reliable performance.</li></ul>",
+      "createdAt": "2024-12-14T10:38:00.304Z",
+      "updatedAt": "2024-12-31T04:52:48.012Z",
+      "__v": 0
+    }
+  ],
+  "aboutpages": [],
+  "userfavorites": [],
+  "whatsappsettings": [],
+  "aboutus": [],
+  "logos": [
+    {
+      "_id": "67a1e57e6128da5a7603e3c4",
+      "type": "headerColor",
+      "photo": "photo_1738663294929.svg",
+      "alt": "abc",
+      "createdAt": "2025-02-04T10:01:34.930Z",
+      "updatedAt": "2025-02-04T10:01:34.930Z",
+      "__v": 0
+    },
+    {
+      "_id": "67a1e69172f24e6bc1e8ab75",
+      "type": "headerWhite",
+      "photo": "photo_1738663569628.png",
+      "alt": "ostech",
+      "createdAt": "2025-02-04T10:06:09.635Z",
+      "updatedAt": "2025-02-04T10:06:09.635Z",
+      "__v": 0
+    },
+    {
+      "_id": "67a1e6dd72f24e6bc1e8ab7b",
+      "type": "footerColor",
+      "photo": "photo_1738663645910.png",
+      "alt": "logo",
+      "createdAt": "2025-02-04T10:07:25.912Z",
+      "updatedAt": "2025-02-04T10:07:25.912Z",
+      "__v": 0
+    },
+    {
+      "_id": "67a1e6ed72f24e6bc1e8ab7d",
+      "type": "favicon",
+      "photo": "photo_1738663661752.png",
+      "alt": "favicon",
+      "createdAt": "2025-02-04T10:07:41.753Z",
+      "updatedAt": "2025-02-04T10:07:41.753Z",
+      "__v": 0
+    }
+  ],
+  "careers": [],
+  "negotiations": [],
+  "videos": [
+    {
+      "_id": "67386adb363a3e635ca1fdde",
+      "title": "Delivering Excellence with Sustainability",
+      "youtubeId": "https://ik.imagekit.io/ytkqnjniu/videoId-1732188514131-927071539.mp4?tr=orig&updatedAt=1740036213179",
+      "duration": "",
+      "views": "",
+      "channel": "ostech machines pvt ltd",
+      "videoId": "videoId-1732188514131-927071539.mp4",
+      "createdAt": "2024-11-16T09:50:19.008Z",
+      "updatedAt": "2025-01-11T06:16:53.734Z",
+      "__v": 0
+    },
+    {
+      "_id": "67386c1bd86f4953444cb520",
+      "title": "Soap Packing Machine",
+      "youtubeId": "1V-5ly6WIAw?si=AO4uRmf9pJBQRkA4",
+      "duration": "1:35",
+      "views": "234K",
+      "channel": "ostech machines pvt ltd",
+      "videoId": null,
+      "createdAt": "2024-11-16T09:55:39.797Z",
+      "updatedAt": "2025-01-07T05:17:10.060Z",
+      "__v": 0
+    },
+    {
+      "_id": "673c26cc60d1d59d539a523e",
+      "title": "Efficient Soap Cutting, Billet Shaping",
+      "youtubeId": "https://ik.imagekit.io/ytkqnjniu/video_1736320976571.mp4?updatedAt=1740039826737",
+      "duration": "",
+      "views": "",
+      "channel": "ostech machines pvt ltd",
+      "videoId": "videoId-1735634419399-694279345.mp4",
+      "createdAt": "2024-11-19T05:49:00.600Z",
+      "updatedAt": "2025-01-11T06:15:03.733Z",
+      "__v": 0
+    },
+    {
+      "_id": "6745653bec403aadeac57afd",
+      "title": "LUX Soap Packaging",
+      "youtubeId": "9puYyhFOD6Q?si=KFc5CQqoeLMKyzzN",
+      "duration": "4:12",
+      "views": "",
+      "channel": "ostech machines pvt ltd",
+      "videoId": null,
+      "createdAt": "2024-11-26T06:05:47.110Z",
+      "updatedAt": "2025-01-07T06:12:31.205Z",
+      "__v": 0
+    },
+    {
+      "_id": "674565b3ec403aadeac57b0d",
+      "title": "RIN Washing Soap Packaging",
+      "youtubeId": "https://ik.imagekit.io/dsakccfut/Ostech%20Final%20video(edited%20on%207th%20jan)%20(1).mp4?updatedAt=1736573586901",
+      "duration": "3:13",
+      "views": "",
+      "channel": "ostech machines pvt ltd",
+      "videoId": null,
+      "createdAt": "2024-11-26T06:07:47.433Z",
+      "updatedAt": "2025-01-11T06:07:51.404Z",
+      "__v": 0
+    },
+    {
+      "_id": "6745702383b5727e05c54fff",
+      "title": "VIM Soap Packaging",
+      "youtubeId": "Rc0nuyfhwPQ?si=-n2OVz2k3MGNOkba",
+      "duration": "2:23",
+      "views": "",
+      "channel": "ostech machines pvt ltd",
+      "videoId": null,
+      "createdAt": "2024-11-26T06:52:19.575Z",
+      "updatedAt": "2025-01-07T06:12:40.164Z",
+      "__v": 0
+    }
+  ],
+  "sitemaps": [],
+  "googlesettings": [],
+  "missions": [
+    {
+      "_id": "6735c90fe151ac3632c271d6",
+      "__v": 0,
+      "alt": [
+        "mission"
+      ],
+      "createdAt": "2024-11-14T09:55:25.775Z",
+      "description": "<p><span style=\"color: rgb(75, 85, 99); background-color: rgb(249, 250, 251);\">Ostech delivers world-class engineering solutions, combining cutting-edge machinery with expert problem-solving to meet your industrial needs.</span></p>",
+      "photo": [
+        "photo_1731578125724.webp"
+      ],
+      "status": "active",
+      "title": "We offer Industrial Solutions that are reliable, efficient, safe, and sustainable.",
+      "updatedAt": "2024-11-14T09:55:25.775Z",
+      "imgtitle": [
+        "mission"
+      ]
+    }
+  ],
+  "whychooses": [],
+  "menulistings": [
+    {
+      "_id": "6738743ab6a01985c5eab39f",
+      "pagename": "Home",
+      "alt": "",
+      "priority": 1,
+      "createdAt": "2024-11-16T10:30:18.689Z",
+      "updatedAt": "2024-11-16T10:30:18.690Z",
+      "__v": 0
+    },
+    {
+      "_id": "67387457b6a01985c5eab3aa",
+      "pagename": "About Us",
+      "alt": "",
+      "priority": 2,
+      "createdAt": "2024-11-16T10:30:47.276Z",
+      "updatedAt": "2024-11-16T10:54:42.419Z",
+      "__v": 0
+    },
+    {
+      "_id": "67387462b6a01985c5eab3b5",
+      "pagename": "Products",
+      "alt": "",
+      "priority": 3,
+      "createdAt": "2024-11-16T10:30:58.875Z",
+      "updatedAt": "2024-11-16T10:54:35.257Z",
+      "__v": 0
+    },
+    {
+      "_id": "6738747ab6a01985c5eab3c0",
+      "pagename": "Resources",
+      "alt": "",
+      "priority": 4,
+      "createdAt": "2024-11-16T10:31:22.973Z",
+      "updatedAt": "2024-11-16T10:54:29.250Z",
+      "__v": 0
+    },
+    {
+      "_id": "6738748cb6a01985c5eab3cb",
+      "pagename": "Our Capabilities",
+      "alt": "",
+      "priority": 5,
+      "createdAt": "2024-11-16T10:31:40.868Z",
+      "updatedAt": "2024-12-09T10:44:05.639Z",
+      "__v": 0
+    },
+    {
+      "_id": "673874a1b6a01985c5eab3d6",
+      "pagename": "Contact Us",
+      "alt": "",
+      "priority": 6,
+      "createdAt": "2024-11-16T10:32:01.560Z",
+      "updatedAt": "2024-11-16T10:54:14.760Z",
+      "__v": 0
+    }
+  ],
+  "contents": [
+    {
+      "_id": "673c03c28286dfd823b728d0",
+      "title": "What We Leverage?",
+      "subtitle": "Watch our latest development.",
+      "images": "images_1734331717499.jpg",
+      "videoLink": "https://www.youtube.com/embed/QxoVhZStZvA?si=Nb93tr_rirBFGrEX",
+      "createdAt": "2024-11-19T03:19:30.336Z",
+      "updatedAt": "2024-12-31T08:42:32.411Z",
+      "__v": 0
+    }
+  ],
+  "achievements": [],
+  "careerinquiries": [],
+  "servicecategories": [],
+  "newscategories": [],
+  "users": [],
+  "monthlybackups": [
+    {
+      "_id": "679d166ce326221227f948d5",
+      "fileName": "export_January_2025_1738348140587.json",
+      "createdAt": "2025-01-31T18:29:00.563Z",
+      "__v": 0
+    }
+  ],
+  "quotarequirementcollections": [],
+  "pageheadings": [
+    {
+      "_id": "6735ba570b82797cb4c0a753",
+      "pageType": "partner",
+      "heading": "Our Trusted Brands",
+      "subheading": "Here are some of our valued clients",
+      "__v": 0
+    },
+    {
+      "_id": "673c6177d54bca8c11471c02",
+      "pageType": "product",
+      "heading": "Our Manufactured Products",
+      "subheading": "Discover the top-rated and most popular products that have captured the attention of our customers, offering exceptional quality and value, and continue to be the go-to choices for shoppers.",
+      "__v": 0
+    }
+  ],
+  "hello": [
+    {
+      "_id": "673594c627486f0480c5d91f",
+      "title": "Transforming Ideas With Innovations",
+      "description": "<p><strong style=\"color: rgb(18, 144, 202); background-color: rgb(230, 230, 230);\">Safety, Quality, Excellence.</strong></p><p>With our excellent reputation, we are proud to be the best low-cost SPM (Special Purpose Machineries) builder for Detergent, Pharmaceuticals, Paints, FMCG, and Chemical industries worldwide.&nbsp;Founded by the dynamic Mr. Anil Singh, OSTECH has been serving the global market for 20+ years.</p><p><br></p><p>Our core values lie in the true meaning of teamwork, dedication and delivering excellence. We strive to maintain these values throughout the entire workflow from start to finish, thus guaranteeing 100% customer delight.</p>",
+      "longDescription": "<p><strong style=\"background-color: rgb(230, 230, 230); color: rgb(18, 144, 202);\">Safety, Quality, Excellence.</strong></p><p>With our excellent reputation, we are proud to be the best low-cost SPM (Special Purpose Machineries) builder for Detergent, Pharmaceuticals, Paints, FMCG, and Chemical industries worldwide.&nbsp;Founded by the dynamic Mr. Anil Singh, OSTECH has been serving the global market for 20+ years.</p><p><br></p><p>Our core values lie in the true meaning of teamwork, dedication and delivering excellence. We strive to maintain these values throughout the entire workflow from start to finish, thus guaranteeing 100% customer delight. Our Success is driven by a Customer-centric approach, where we prioritize understanding the specific requirements of our clients. This enables us to design and build special purpose machineries that not only meet but exceed industry standards.</p>",
+      "videoLink": "#",
+      "photo": [
+        "photo_1731564742658.jpg",
+        "photo_1731564742703.jpg",
+        "photo_1735627802931.jpg"
+      ],
+      "alt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "status": "active",
+      "createdAt": "2024-11-14T06:12:22.796Z",
+      "updatedAt": "2024-11-14T06:12:22.796Z",
+      "__v": 2,
+      "imgName": [
+        "dsafqwerf"
+      ],
+      "imgtitle": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "payments": [],
+  "ourcapabilityservices": [
+    {
+      "_id": "675d2b3b85476ce9ccf5fd4d",
+      "title": "Case Packer",
+      "photo": "photo_1736309676681_photo_1736309188309.JPG",
+      "imgTitle": "Case Packer",
+      "altName": "Case Packer",
+      "description": "Partnering with OSTECH Company for your case packing manufacturing needs offers several distinct advantages. With a strong reputation for delivering high-quality, efficient, and reliable solutions, OSTECH ensures that your case packing processes are optimized to meet the demands of your production schedule. Utilizing state-of-the-art technology, advanced machinery, and a skilled workforce, the company provides customized solutions tailored to your specific requirements. Additionally, OSTECH is committed to on-time delivery, cost-effectiveness, and exceptional customer service, making it an ideal partner for all your case packing needs.",
+      "createdAt": "2024-12-14T06:52:43.006Z",
+      "updatedAt": "2025-01-08T04:14:36.793Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f968bc1199ffb0f91628c",
+      "title": "Auto Stamper",
+      "photo": "photo_1735622366786_autoStamper.png",
+      "imgTitle": "auto stamper",
+      "altName": "auto stamper",
+      "description": "Opting for an auto stamper solution offers numerous advantages, including enhanced precision and efficiency in high-volume production. With advanced technology and reliable machinery, auto stampers ensure consistent quality and reduce the likelihood of human error, leading to lower operational costs and improved output. The customizable nature of these machines allows for tailored solutions to meet specific production needs, offering flexibility and scalability. Additionally, the automation of stamping processes increases production speed, reduces labor costs, and ensures faster turnaround times, making it an ideal choice for businesses seeking both cost-effective and high-performance stamping solutions.",
+      "createdAt": "2024-12-16T02:55:07.463Z",
+      "updatedAt": "2024-12-31T05:19:26.788Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f96e1c1199ffb0f916296",
+      "title": "Manufacturing Design",
+      "photo": "photo_1735622536745_manufacturing.jpg",
+      "imgTitle": "md",
+      "altName": "md",
+      "description": "Choosing a manufacturing design solution offers numerous advantages, including optimized production efficiency and cost savings. By utilizing advanced design techniques and innovative technologies, manufacturing design ensures that products are engineered for maximum performance, reliability, and ease of production. The process allows for precise customization, enabling designs to be tailored to specific requirements, which enhances product quality and minimizes waste. Additionally, a well-crafted manufacturing design improves production timelines, reduces costs through efficient material usage, and facilitates scalability, making it an essential element for businesses looking to improve operational efficiency and competitiveness.",
+      "createdAt": "2024-12-16T02:56:33.589Z",
+      "updatedAt": "2024-12-31T05:22:16.951Z",
+      "__v": 0
+    },
+    {
+      "_id": "675f970dc1199ffb0f916299",
+      "title": "Specialized Conveyor",
+      "photo": "photo_1734317837369_photo_1731649149752.webp",
+      "imgTitle": "Specialized Conveyor",
+      "altName": "Specialized Conveyor",
+      "description": "Opting for a specialized conveyor system brings a range of benefits, including enhanced workflow efficiency and reduced operational downtime. These conveyors are designed to meet the unique needs of specific production lines, allowing for seamless integration into various manufacturing processes. With tailored designs, they improve product handling, increase throughput, and reduce manual labor, all while ensuring optimal safety standards. The automation provided by specialized conveyors streamlines material flow, reduces bottlenecks, and boosts overall productivity. By implementing such systems, businesses can achieve greater consistency, scalability, and cost-efficiency, making specialized conveyors a crucial asset for modern production environments.",
+      "createdAt": "2024-12-16T02:57:17.372Z",
+      "updatedAt": "2024-12-16T05:41:31.065Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fbe08c1199ffb0f9164de",
+      "title": "Robotics Picks and Place",
+      "photo": "photo_1735622615403_robotic.jpg",
+      "imgTitle": "Robotics Picks and Place",
+      "altName": "Robotics Picks and Place",
+      "description": "Implementing robotics for pick and place operations offers significant advantages in modern manufacturing. These automated systems enhance accuracy, speed, and consistency in handling materials, reducing the risk of human error and increasing throughput. Robotics can be tailored to handle a wide range of products, ensuring precision in sorting, assembling, and packaging. By automating repetitive tasks, businesses can reduce labor costs, improve safety, and free up human workers for more complex roles. Additionally, robotics systems can operate continuously, boosting productivity and ensuring faster turnaround times, making them an invaluable solution for businesses seeking to optimize their manufacturing processes.",
+      "createdAt": "2024-12-16T05:43:36.492Z",
+      "updatedAt": "2024-12-31T05:23:35.407Z",
+      "__v": 0
+    },
+    {
+      "_id": "675fbf97c1199ffb0f9164e1",
+      "title": "Technical Service And Support ",
+      "photo": "photo_1735622624584_technical.jpg",
+      "imgTitle": "Technical Support ",
+      "altName": "Technical Support ",
+      "description": "Opting for technical service and support offers critical advantages in ensuring the seamless operation and longevity of equipment and systems. Expert technical support provides businesses with immediate assistance, minimizing downtime and preventing costly disruptions to production. With skilled professionals available to troubleshoot, maintain, and optimize systems, businesses can improve operational efficiency and extend the lifespan of their equipment. Additionally, ongoing service contracts offer proactive solutions, ensuring that potential issues are addressed before they impact productivity. By investing in reliable technical service and support, companies can enhance system performance, reduce operational risks, and maintain a competitive edge in their industry.",
+      "createdAt": "2024-12-16T05:50:15.339Z",
+      "updatedAt": "2024-12-31T05:23:44.625Z",
+      "__v": 0
+    }
+  ],
+  "backups": [],
+  "qualitycontrols": [],
+  "visions": [
+    {
+      "_id": "6736c757e151ac3632bc2711",
+      "__v": 0,
+      "alt": [
+        "vision"
+      ],
+      "createdAt": "2024-11-15T04:00:21.695Z",
+      "description": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(55, 65, 81);\">To become the biggest brand in the automation industry – the most reliable, efficient, and customer-friendly company in the world.</span></p>",
+      "photo": [
+        "photo_1731643221667.jpg"
+      ],
+      "status": "active",
+      "title": "Our Vision",
+      "updatedAt": "2024-11-15T04:00:21.695Z"
+    }
+  ],
+  "quotations": [],
+  "importedfiles": [],
+  "testimonials": [],
+  "categories": [],
+  "inquiries": [
+    {
+      "_id": "67382b442a5ba1e98c971d3b",
+      "name": "Mitva",
+      "email": "mitvashah792@gmail.com",
+      "phone": "8347980883",
+      "message": "Testing",
+      "createdAt": "2024-11-16T05:19:00.370Z",
+      "updatedAt": "2024-11-16T05:19:00.370Z",
+      "__v": 0
+    },
+    {
+      "_id": "67382b4c2a5ba1e98c971d3d",
+      "name": "Mitva ",
+      "email": "mitvashah792@gmail.com",
+      "phone": "8347980883",
+      "message": "testing",
+      "createdAt": "2024-11-16T05:19:08.194Z",
+      "updatedAt": "2024-11-16T05:19:08.194Z",
+      "__v": 0
+    },
+    {
+      "_id": "674032c2988be95412caf969",
+      "name": "harshit dhodi",
+      "email": "harshitdhodi22@gmail.com",
+      "phone": "8347980883",
+      "message": "testing",
+      "createdAt": "2024-11-22T07:29:06.676Z",
+      "updatedAt": "2024-11-22T07:29:06.676Z",
+      "__v": 0
+    }
+  ],
+  "counters": [],
+  "ourstaffs": [
+    {
+      "_id": "6735dd4d1a3774a5c877bd3d",
+      "S_id": "diAX3NrXiQw?si=9mK0D2wNy5dy6phN",
+      "name": "Getting Started with React",
+      "photo": [
+        "photo_1731583309363.jpg"
+      ],
+      "alt": [
+        "video1"
+      ],
+      "details": "React Tutorials",
+      "jobTitle": "234K",
+      "status": "active",
+      "createdAt": "2024-11-14T11:21:49.508Z",
+      "updatedAt": "2024-11-14T11:21:49.546Z",
+      "__v": 0
+    },
+    {
+      "_id": "6735dd4d1a3774a5c877bd3f",
+      "S_id": "diAX3NrXiQw?si=9mK0D2wNy5dy6phN",
+      "name": "Getting Started with React",
+      "photo": [
+        "photo_1731583309384.jpg"
+      ],
+      "alt": [
+        "video1"
+      ],
+      "details": "React Tutorials",
+      "jobTitle": "234K",
+      "status": "active",
+      "createdAt": "2024-11-14T11:21:49.551Z",
+      "updatedAt": "2024-11-14T11:21:49.558Z",
+      "__v": 0
+    },
+    {
+      "_id": "6735dd4d1a3774a5c877bd41",
+      "S_id": "diAX3NrXiQw?si=9mK0D2wNy5dy6phN",
+      "name": "Getting Started with React",
+      "photo": [
+        "photo_1731583309389.jpg"
+      ],
+      "alt": [
+        "video1"
+      ],
+      "details": "React Tutorials",
+      "jobTitle": "234K",
+      "status": "active",
+      "createdAt": "2024-11-14T11:21:49.629Z",
+      "updatedAt": "2024-11-14T11:21:49.660Z",
+      "__v": 0
+    }
+  ],
+  "partners": [
+    {
+      "_id": "67359af0221fae8e1700e5bd",
+      "partnerName": "lifebuoy",
+      "photo": [
+        "photo_1732332978550.png"
+      ],
+      "alt": [
+        "lifebuoy"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-14T06:38:40.894Z",
+      "updatedAt": "2024-11-25T03:02:45.786Z",
+      "__v": 3,
+      "imgtitle": [
+        "lifebuoy"
+      ]
+    },
+    {
+      "_id": "67359cc8fa134b74ba39691f",
+      "partnerName": "lux",
+      "photo": [
+        "photo_1732184381934.png"
+      ],
+      "alt": [
+        "LUX"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-14T06:46:32.688Z",
+      "updatedAt": "2024-11-21T10:19:41.943Z",
+      "__v": 2
+    },
+    {
+      "_id": "67359cfffa134b74ba39692f",
+      "partnerName": "RIN",
+      "photo": [
+        "photo_1732184437940.png"
+      ],
+      "alt": [
+        "RIN"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-14T06:47:27.120Z",
+      "updatedAt": "2024-11-21T10:20:37.949Z",
+      "__v": 2
+    },
+    {
+      "_id": "6735a65726753c28c217bb77",
+      "partnerName": "Dettol",
+      "photo": [
+        "photo_1732163803922.png"
+      ],
+      "alt": [
+        "Dettol"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-14T07:27:19.265Z",
+      "updatedAt": "2024-11-23T03:39:26.804Z",
+      "__v": 1,
+      "imgtitle": [
+        "kkc"
+      ]
+    },
+    {
+      "_id": "673eb8edfdab2e102e03b45f",
+      "partnerName": "Vim",
+      "photo": [
+        "photo_1732184460068.png"
+      ],
+      "alt": [
+        "VIM"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:37:01.548Z",
+      "updatedAt": "2024-11-21T10:21:00.078Z",
+      "__v": 1,
+      "imgtitle": [
+        "Vim"
+      ]
+    },
+    {
+      "_id": "673eb901fdab2e102e03b467",
+      "partnerName": "Tide",
+      "photo": [
+        "photo_1732184477158.png"
+      ],
+      "alt": [
+        "tide"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:37:21.348Z",
+      "updatedAt": "2024-11-21T10:21:17.168Z",
+      "__v": 1,
+      "imgtitle": [
+        "Tide"
+      ]
+    },
+    {
+      "_id": "673eb91afdab2e102e03b46f",
+      "partnerName": "PowerSoaps",
+      "photo": [
+        "photo_1732163866561.png"
+      ],
+      "alt": [
+        "PowerSoaps"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:37:46.564Z",
+      "updatedAt": "2024-11-21T04:37:46.565Z",
+      "__v": 0,
+      "imgtitle": [
+        "PowerSoaps"
+      ]
+    },
+    {
+      "_id": "673eb92bfdab2e102e03b477",
+      "partnerName": "P&G",
+      "photo": [
+        "photo_1732184509718.png"
+      ],
+      "alt": [
+        "P&G"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:38:03.875Z",
+      "updatedAt": "2024-11-21T10:21:49.727Z",
+      "__v": 1,
+      "imgtitle": [
+        "P&G"
+      ]
+    },
+    {
+      "_id": "673eb943fdab2e102e03b47f",
+      "partnerName": "HUL",
+      "photo": [
+        "photo_1732163907859.png"
+      ],
+      "alt": [
+        "HUL"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:38:27.861Z",
+      "updatedAt": "2024-11-21T04:38:27.862Z",
+      "__v": 0,
+      "imgtitle": [
+        "HUL"
+      ]
+    },
+    {
+      "_id": "673eb957fdab2e102e03b487",
+      "partnerName": "LAKME",
+      "photo": [
+        "photo_1732187418711.png"
+      ],
+      "alt": [
+        "LAKME"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T04:38:47.436Z",
+      "updatedAt": "2024-11-21T11:10:18.722Z",
+      "__v": 1,
+      "imgtitle": [
+        "LAKME"
+      ]
+    },
+    {
+      "_id": "673f1532ca44ce3fc7234feb",
+      "partnerName": "SARGAM",
+      "photo": [
+        "photo_1732187442476.png"
+      ],
+      "alt": [
+        "SARGAM"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T11:10:42.479Z",
+      "updatedAt": "2024-11-21T11:10:42.480Z",
+      "__v": 0,
+      "imgtitle": [
+        "SARGAM"
+      ]
+    },
+    {
+      "_id": "673f1546ca44ce3fc7234ff3",
+      "partnerName": "Meril",
+      "photo": [
+        "photo_1732187462220.png"
+      ],
+      "alt": [
+        "Meril"
+      ],
+      "url": "",
+      "status": "active",
+      "createdAt": "2024-11-21T11:11:02.222Z",
+      "updatedAt": "2024-11-21T11:11:02.223Z",
+      "__v": 0,
+      "imgtitle": [
+        "Meril"
+      ]
+    }
+  ],
+  "gallerycategories": [],
+  "headers": [],
+  "contactpages": [],
+  "explorecategories": [],
+  "faqs": [
+    {
+      "_id": "6735cb50f4520dd033261930",
+      "question": "Leading industrial solutions with best machinery",
+      "answer": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Redefining industry standards through cutting-edge machinery and innovative industrial solutions, we are committed to delivering excellence and driving success for your business with the finest technology and expertise.</span></p>",
+      "status": "active",
+      "createdAt": "2024-11-14T10:05:04.267Z",
+      "updatedAt": "2024-11-14T10:05:04.271Z",
+      "__v": 0
+    },
+    {
+      "_id": "6735cbfbe2ccd9993c84b735",
+      "question": "Accurate responses to client’s requirments",
+      "answer": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Our commitment lies in providing precise and tailored solutions that perfectly align with our clients' requirements. With a focus on accuracy, we ensure satisfaction by delivering results that meet and exceed expectations.</span></p>",
+      "status": "active",
+      "createdAt": "2024-11-14T10:07:55.371Z",
+      "updatedAt": "2024-11-14T10:07:55.371Z",
+      "__v": 0
+    },
+    {
+      "_id": "6735cc81e2ccd9993c84b75d",
+      "question": "World’s leader in engineering business",
+      "answer": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85);\">Pioneering the forefront of the engineering business, we stand as the world's leader, dedicated to innovation, excellence, and driving global advancements.</span></p>",
+      "status": "active",
+      "createdAt": "2024-11-14T10:10:09.420Z",
+      "updatedAt": "2024-11-14T10:10:09.421Z",
+      "__v": 0
+    },
+    {
+      "_id": "6735ccbde2ccd9993c84b76c",
+      "question": "Ostech has potential to find efficient solutions:",
+      "answer": "<p><span style=\"color: rgb(85, 85, 85); background-color: rgb(255, 255, 255);\">Ostech is poised to discover and implement efficient solutions, showcasing its potential to lead in problem-solving and innovation within various industries.</span></p>",
+      "status": "active",
+      "createdAt": "2024-11-14T10:11:09.467Z",
+      "updatedAt": "2024-11-14T10:11:09.468Z",
+      "__v": 0
+    }
+  ],
+  "corevalues": [
+    {
+      "_id": "67383b4643aebf2b7da8ab0c",
+      "title": "Team Work",
+      "description": "<p>We emphasize on team work because we believe no task is impossible when like-minded people with the same goal come together.</p>",
+      "photo": [
+        "photo_1731739177409.png"
+      ],
+      "alt": [
+        "team"
+      ],
+      "status": "active",
+      "createdAt": "2024-11-16T06:27:18.305Z",
+      "updatedAt": "2024-11-16T06:27:18.305Z",
+      "__v": 1,
+      "imgtitle": [
+        "team"
+      ]
+    },
+    {
+      "_id": "67383e1710ea8c90478838ff",
+      "title": "Dedication",
+      "description": "<p>We strive to achieve success and meet our client's expectations with unconditional dedication and support.</p>",
+      "photo": [
+        "photo_1731739159575.png"
+      ],
+      "alt": [
+        "1"
+      ],
+      "status": "active",
+      "createdAt": "2024-11-16T06:39:19.586Z",
+      "updatedAt": "2024-11-16T06:39:19.586Z",
+      "__v": 0
+    },
+    {
+      "_id": "67383e5110ea8c904788390f",
+      "title": "Deliver Excellence",
+      "description": "<p>We boast to deliver superior quality products, with efficient procedures. Therefore our customers choose to partner with us.</p>",
+      "photo": [
+        "photo_1731739217341.png"
+      ],
+      "alt": [
+        "1"
+      ],
+      "status": "active",
+      "createdAt": "2024-11-16T06:40:17.343Z",
+      "updatedAt": "2024-11-16T06:40:17.343Z",
+      "__v": 0
+    }
+  ]
+}

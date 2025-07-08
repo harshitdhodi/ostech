@@ -4,7 +4,7 @@ import axios from 'axios';
 import Modal from 'react-modal';
 import { FaTimes } from 'react-icons/fa';
 
-// Set the app element for the modal (optional)
+// Set the app element for the modal
 Modal.setAppElement('#root');
 
 function InquiryForm({ productName, onClose }) {
@@ -18,11 +18,10 @@ function InquiryForm({ productName, onClose }) {
     const [errorMessage, setErrorMessage] = useState('');
     const [clientIp, setClientIp] = useState('');
     const [utmParams, setUtmParams] = useState({});
-    const [modalIsOpen, setModalIsOpen] = useState(false); // State for modal visibility
-    const [showInquiryForm, setShowInquiryForm] = useState(false);
-  
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalType, setModalType] = useState('');
+
     useEffect(() => {
-        // Fetch the client's IP address
         const fetchClientIp = async () => {
             try {
                 const response = await axios.get('https://api.ipify.org?format=json');
@@ -34,7 +33,6 @@ function InquiryForm({ productName, onClose }) {
 
         fetchClientIp();
 
-        // Get UTM parameters from the URL
         const params = new URLSearchParams(window.location.search);
         setUtmParams({
             utm_source: params.get('utm_source') || '',
@@ -57,9 +55,10 @@ function InquiryForm({ productName, onClose }) {
         }
 
         setIsSubmitting(true);
+        setErrorMessage('');
 
         try {
-            const response = await axios.post('/api/productinquiry/createproductinquiries', {
+            await axios.post('/api/productinquiry/createproductinquiries', {
                 name,
                 email,
                 phone,
@@ -67,34 +66,62 @@ function InquiryForm({ productName, onClose }) {
                 message,
                 productName,
                 ipaddress: clientIp,
-                ...utmParams, // Spread UTM parameters into the form data
+                ...utmParams,
             });
 
-            // Open modal on successful submission
-            setModalIsOpen(true);
-            // Clear form fields
+            console.log('Submission successful, opening success modal');
             setName('');
             setEmail('');
             setPhone('');
             setSubject('');
             setMessage('');
+            setCaptchaValue(null);
 
-            if (response.data.success) {
-                // Handle success (e.g., show a success message, clear form, etc.)
-                onClose();
-            }
+            setModalType('success');
+            setModalIsOpen(true);
         } catch (error) {
-            // Handle error
-            setErrorMessage(error.response ? error.response.data.error : 'An error occurred.');
+            let errorMsg = 'An unexpected error occurred. Please try again.';
+            if (error.response) {
+                if (error.response.status === 400) {
+                    errorMsg = error.response.data.error || 'Invalid input. Please check your form data.';
+                } else if (error.response.status === 500) {
+                    errorMsg = 'Server error. Please try again later.';
+                }
+            } else if (error.request) {
+                errorMsg = 'Network error. Please check your internet connection.';
+            }
+
+            if (error.response?.status >= 500) {
+                setModalType('error');
+                setModalIsOpen(true);
+                setErrorMessage(errorMsg);
+            } else {
+                setErrorMessage(errorMsg);
+            }
         } finally {
             setIsSubmitting(false);
         }
     };
 
+    const closeModal = () => {
+        setModalIsOpen(false);
+        setModalType('');
+        if (modalType === 'success') {
+            onClose();
+        }
+    };
+
+    console.log('Modal State:', { modalIsOpen, modalType });
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
                 <h2 className="text-2xl font-bold mb-4">Inquiry for {productName}</h2>
+                {errorMessage && !modalIsOpen && (
+                    <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg" role="alert">
+                        {errorMessage}
+                    </div>
+                )}
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label className="block text-gray-700">Name</label>
@@ -103,7 +130,8 @@ function InquiryForm({ productName, onClose }) {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             className="w-full border border-gray-300 p-2 rounded-lg"
-                            required
+                            required="true"
+                            aria-required="true"
                         />
                     </div>
                     <div className="mb-4">
@@ -113,7 +141,8 @@ function InquiryForm({ productName, onClose }) {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className="w-full border border-gray-300 p-2 rounded-lg"
-                            required
+                            required="true"
+                            aria-required="true"
                         />
                     </div>
                     <div className="mb-4">
@@ -123,7 +152,9 @@ function InquiryForm({ productName, onClose }) {
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                             className="w-full border border-gray-300 p-2 rounded-lg"
-                            required
+                            required="true"
+                            maxLength="10"
+                            aria-required="true"
                         />
                     </div>
                     <div className="mb-4">
@@ -133,7 +164,8 @@ function InquiryForm({ productName, onClose }) {
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
                             className="w-full border border-gray-300 p-2 rounded-lg"
-                            required
+                            required="true"
+                            aria-required="true"
                         />
                     </div>
                     <div className="mb-4">
@@ -142,7 +174,8 @@ function InquiryForm({ productName, onClose }) {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             className="w-full border border-gray-300 p-2 rounded-lg"
-                            required
+                            required="true"
+                            aria-required="true"
                         />
                     </div>
                     <div className="mb-4">
@@ -151,13 +184,13 @@ function InquiryForm({ productName, onClose }) {
                             onChange={(value) => setCaptchaValue(value)}
                         />
                     </div>
-                    {errorMessage && <p className="text-red-500">{errorMessage}</p>}
                     <div className="flex justify-end">
                         <button
                             type="button"
                             className="bg-red-500 text-white py-2 px-4 rounded-lg mr-2"
                             onClick={onClose}
                             disabled={isSubmitting}
+                            aria-label="Cancel"
                         >
                             Cancel
                         </button>
@@ -165,6 +198,7 @@ function InquiryForm({ productName, onClose }) {
                             type="submit"
                             className="bg-blue-500 text-white py-2 px-4 rounded-lg"
                             disabled={!captchaValue || isSubmitting}
+                            aria-label={isSubmitting ? 'Submitting' : 'Submit'}
                         >
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
@@ -173,18 +207,28 @@ function InquiryForm({ productName, onClose }) {
             </div>
             <Modal
                 isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-                contentLabel="Submission Successful"
-                className="fixed inset-0 flex items-center justify-center z-50 p-4"
-                overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+                onRequestClose={closeModal}
+                contentLabel={modalType === 'success' ? 'Submission Successful' : 'Submission Error'}
+                className="fixed inset-0 flex items-center justify-center z-[60] p-4"
+                overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-[55]"
             >
-                <div className="bg-[#f5faf7ed] p-6 rounded-lg shadow-lg w-full max-w-md relative">
-                    <h2 className="text-2xl font-bold mb-4 text-green-700">Thank You!</h2>
-                    <p className="mb-4">Your message has been successfully sent.</p>
-                    <p className='mb-4'> We will get back to you soon.</p>
+                <div className={`p-6 rounded-lg shadow-lg w-full max-w-md relative ${modalType === 'success' ? 'bg-[#f5faf7]' : 'bg-[#fff3f3]'}`}>
+                    {modalType === 'success' ? (
+                        <>
+                            <h2 className="text-2xl font-bold mb-4 text-green-700">Thank You!</h2>
+                            <p className="mb-4">Your message has been successfully sent.</p>
+                            <p className="mb-4">We will get back to you soon.</p>
+                        </>
+                    ) : (
+                        <>
+                            <h2 className="text-2xl font-bold mb-4 text-red-700">Error</h2>
+                            <p className="mb-4">{errorMessage}</p>
+                        </>
+                    )}
                     <button
-                        onClick={() => setModalIsOpen(false)}
-                        className=" text-black px-4 py-2  absolute top-2 right-2"
+                        onClick={closeModal}
+                        className="text-black px-4 py-2 absolute top-2 right-2"
+                        aria-label="Close modal"
                     >
                         <FaTimes size={25} />
                     </button>
