@@ -14,7 +14,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3001", // Backend server URL
+        target: "http://localhost:3024", // Backend server URL
         changeOrigin: true, // Change the origin of the host header to the target URL
         secure: false, // Set to false if you're not using HTTPS
          },

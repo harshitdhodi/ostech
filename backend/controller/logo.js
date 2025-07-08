@@ -6,6 +6,7 @@ const fs = require('fs');
 const getAllLogos = async (req, res) => {
   try {
     const logos = await Logo.find();
+    console.log(logos)
     res.json(logos);
   } catch (err) {
     res.status(500).json({ message: err.message });
