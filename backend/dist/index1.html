@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSTECH Machines - Under Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .construction-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .email, .phone {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .email:hover, .phone:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .construction-icon {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">OSTECH MACHINES PVT LTD</div>
+        <div class="construction-icon">🚧</div>
+        <h1>Under Construction</h1>
+        <p class="subtitle">We're working hard to bring you something amazing!</p>
+        <p>Our website is currently being updated. Please check back soon.</p>
+        
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><strong>OSTECH Machines Pvt Ltd</strong></p>
+            <p>Plot no.121 Vibrant Business Park, GIDC, Vapi-396191, Gujarat</p>
+            <p>Phone: <a href="tel:+919978388388" class="phone">+91 99783 88388</a></p>
+            
+            <p>Email: <a href="mailto:rajnesh@ostech.in" class="email">rajnesh@ostech.in</a></p>
+            <p>Office Timing: 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+</body>
+</html>
