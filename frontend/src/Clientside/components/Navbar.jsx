@@ -118,6 +118,9 @@ const Navbar = () => {
 
   return (
     <>
+      <div className="w-full bg-[#128fc9] text-white text-center py-3 text-md font-medium">
+        🚧 This website is currently under construction. Some features may not be available. 🚧
+      </div>
       <nav className={navClasses}>
         <div className="max-w-8xl md:ml-4 mx-auto md:p-1 px-2 py-1 sm:p-5">
           <div className="flex justify-between items-center lg:gap-28 xl:justify-between md:justify-center w-full py-1 ">
